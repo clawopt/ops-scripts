@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpsTools - 运维工具一键安装脚本</title>
+    <meta name="description" content="免费开源运维工具一键安装脚本库,Docker,Nginx,MySQL,Redis,1Panel,K3s,宝塔面板等20+常用运维软件安装脚本">
+    <meta name="keywords" content="运维脚本,Docker安装,Nginx安装,MySQL安装,Redis安装,1Panel,宝塔面板,K3s安装,Linux安装脚本,DevOps,运维工具">
+    <meta property="og:title" content="OpsTools - 运维工具一键安装脚本">
+    <meta property="og:description" content="20+常用运维软件一键安装脚本，支持Docker、Nginx、MySQL、Redis、1Panel等">
+    <link rel="canonical" href="https://clawopt.github.io/ops-scripts/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-primary: #0d1117; --bg-secondary: #161b22; --bg-tertiary: #21262d; --border-color: #30363d; --text-primary: #f0f6fc; --text-secondary: #8b949e; --text-tertiary: #6e7681; --accent-primary: #58a6ff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        header { background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-icon { width: 40px; height: 40px; background: linear-gradient(135deg, #58a6ff, #a371f7); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+        .logo-text { font-size: 22px; font-weight: 700; }
+        .logo-text span { color: var(--accent-primary); }
+        .hero { padding: 80px 0; text-align: center; background: radial-gradient(ellipse at top, rgba(88,166,255,0.1) 0%, transparent 50%); }
+        .hero h1 { font-size: 48px; font-weight: 700; margin-bottom: 16px; background: linear-gradient(135deg, #f0f6fc, #8b949e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto 32px; }
+        .hero-stats { display: flex; justify-content: center; gap: 48px; }
+        .stat-value { font-size: 36px; font-weight: 700; color: var(--accent-primary); }
+        .stat-label { font-size: 14px; color: var(--text-secondary); }
+        .search-section { padding: 40px 0; }
+        .search-box { max-width: 600px; margin: 0 auto; position: relative; }
+        .search-box input { width: 100%; padding: 16px 20px; font-size: 16px; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-primary); outline: none; }
+        .search-box input:focus { border-color: var(--accent-primary); }
+        .categories { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 48px; }
+        .cat-btn { padding: 8px 16px; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 20px; color: var(--text-secondary); font-size: 14px; cursor: pointer; transition: all 0.2s; }
+        .cat-btn:hover, .cat-btn.active { background: var(--accent-primary); border-color: var(--accent-primary); color: white; }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 20px; padding-bottom: 80px; }
+        .tool-card { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; transition: all 0.2s; }
+        .tool-card:hover { border-color: var(--accent-primary); transform: translateY(-2px); }
+        .tool-header { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+        .tool-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+        .tool-name { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+        .tool-category { font-size: 12px; padding: 2px 8px; border-radius: 12px; display: inline-block; }
+        .tool-desc { color: var(--text-secondary); font-size: 14px; margin-bottom: 16px; }
+        .tool-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--border-color); }
+        .os-tag { font-size: 12px; padding: 4px 8px; background: var(--bg-tertiary); border-radius: 4px; color: var(--text-secondary); margin-right: 4px; }
+        .tool-btn { padding: 8px 16px; background: var(--accent-primary); border: none; border-radius: 6px; color: white; font-size: 14px; font-weight: 500; text-decoration: none; }
+        .tag-container { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+        .tag { font-size: 11px; padding: 2px 8px; background: var(--bg-tertiary); border-radius: 4px; color: var(--text-secondary); }
+        footer { background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; }
+        footer a { color: var(--accent-primary); text-decoration: none; }
+        @media (max-width: 768px) { .hero h1 { font-size: 32px; } .tools-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">Ops<span>Tools</span></div>
+            </a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>运维工具一键安装脚本</h1>
+            <p>免费开源的运维工具安装脚本库，支持 Docker、Nginx、MySQL、Redis、1Panel、K3s 等20+常用运维软件</p>
+            <div class="hero-stats">
+                <div><div class="stat-value">20+</div><div class="stat-label">安装脚本</div></div>
+                <div><div class="stat-value">8</div><div class="stat-label">软件分类</div></div>
+                <div><div class="stat-value">100%</div><div class="stat-label">免费开源</div></div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="search-section">
+            <div class="search-box"><input type="text" id="searchInput" placeholder="搜索工具... (如: docker, nginx, mysql)"></div>
+        </div>
+        <div class="categories" id="categories">
+            <button class="cat-btn active" data-cat="all">🏠 全部</button>
+            <button class="cat-btn" data-cat="容器">🐳 容器</button>
+            <button class="cat-btn" data-cat="Web服务器">🌐 Web服务器</button>
+            <button class="cat-btn" data-cat="数据库">🗄️ 数据库</button>
+            <button class="cat-btn" data-cat="面板工具">🎛️ 面板工具</button>
+            <button class="cat-btn" data-cat="CI_CD">🔄 CI/CD</button>
+            <button class="cat-btn" data-cat="监控运维">📊 监控运维</button>
+            <button class="cat-btn" data-cat="内网穿透">🌍 内网穿透</button>
+            <button class="cat-btn" data-cat="其他">📦 其他</button>
+        </div>
+        <div class="tools-grid" id="toolsGrid"></div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>© 2026 <a href="https://github.com/clawopt">clawopt</a> - 运维工具一键安装脚本库</p>
+        </div>
+    </footer>
+    <script>
+        const tools = [
+            {name:'Docker',category:'容器',icon:'🐳',color:'#2496ed',os:['Ubuntu','Debian'],desc:'开源容器引擎，支持容器化应用部署和管理',tags:['容器','Docker'],link:'scripts/容器/docker.sh'},
+            {name:'Docker Compose',category:'容器',icon:'🐳',color:'#2496ed',os:['Linux'],desc:'定义和运行多容器Docker应用程序的工具',tags:['容器编排'],link:'scripts/容器/docker-compose.sh'},
+            {name:'K3s',category:'容器',icon:'☸️',color:'#326de5',os:['Linux'],desc:'轻量级Kubernetes，适合边缘计算',tags:['K8s','Kubernetes'],link:'scripts/容器/k3s.sh'},
+            {name:'Portainer',category:'容器',icon:'📦',color:'#13aec9',os:['Docker'],desc:'Docker可视化管理界面',tags:['管理','GUI'],link:'scripts/容器/portainer.sh'},
+            {name:'Nginx',category:'Web服务器',icon:'🌐',color:'#009639',os:['Ubuntu','Debian'],desc:'高性能HTTP服务器和反向代理',tags:['Web','反向代理'],link:'scripts/Web服务器/nginx.sh'},
+            {name:'Caddy',category:'Web服务器',icon:'🌐',color:'#f8b731',os:['Ubuntu','Debian'],desc:'自动HTTPS的现代Web服务器',tags:['Web','HTTPS'],link:'scripts/Web服务器/caddy.sh'},
+            {name:'MySQL 8.0',category:'数据库',icon:'🗄️',color:'#4479a1',os:['Ubuntu','Debian'],desc:'最流行的开源关系型数据库',tags:['SQL','数据库'],link:'scripts/数据库/mysql.sh'},
+            {name:'PostgreSQL',category:'数据库',icon:'🗄️',color:'#336791',os:['Ubuntu','Debian'],desc:'功能强大的开源对象关系型数据库',tags:['SQL'],link:'scripts/数据库/postgresql.sh'},
+            {name:'Redis',category:'数据库',icon:'⚡',color:'#dc382d',os:['Ubuntu','Debian'],desc:'高性能内存数据库',tags:['缓存','NoSQL'],link:'scripts/数据库/redis.sh'},
+            {name:'MongoDB 7.0',category:'数据库',icon:'🗄️',color:'#47a248',os:['Ubuntu'],desc:'流行的NoSQL文档数据库',tags:['NoSQL'],link:'scripts/数据库/mongodb.sh'},
+            {name:'ClickHouse',category:'数据库',icon:'🗄️',color:'#ffcc00',os:['Ubuntu','Debian'],desc:'高性能列式数据库',tags:['OLAP'],link:'scripts/数据库/clickhouse.sh'},
+            {name:'1Panel',category:'面板工具',icon:'🎛️',color:'#2a7de9',os:['Ubuntu','Debian','CentOS'],desc:'新一代Linux服务器管理面板',tags:['面板'],link:'scripts/面板工具/1panel.sh'},
+            {name:'宝塔面板',category:'面板工具',icon:'🎛️',color:'#2a7de9',os:['CentOS','Ubuntu'],desc:'受欢迎的中文Linux服务器管理面板',tags:['面板'],link:'scripts/面板工具/baota.sh'},
+            {name:'Nginx Proxy Manager',category:'面板工具',icon:'🔄',color:'#009639',os:['Docker'],desc:'反向代理管理面板',tags:['反向代理'],link:'scripts/面板工具/nginx-proxy-manager.sh'},
+            {name:'Jenkins',category:'CI_CD',icon:'🔄',color:'#d33833',os:['Ubuntu','Debian'],desc:'开源持续集成/部署工具',tags:['CI/CD'],link:'scripts/CI_CD/jenkins.sh'},
+            {name:'GitLab CE',category:'CI_CD',icon:'📚',color:'#fc6d26',os:['Ubuntu','Debian'],desc:'开源代码仓库和DevOps平台',tags:['Git'],link:'scripts/CI_CD/gitlab.sh'},
+            {name:'Prometheus + Grafana',category:'监控运维',icon:'📊',color:'#e6522c',os:['Ubuntu','Debian'],desc:'开源监控系统+可视化仪表盘',tags:['监控'],link:'scripts/监控运维/prometheus-grafana.sh'},
+            {name:'Zabbix',category:'监控运维',icon:'📊',color:'#a30000',os:['Ubuntu'],desc:'企业级开源监控解决方案',tags:['监控'],link:'scripts/监控运维/zabbix.sh'},
+            {name:'frp',category:'内网穿透',icon:'🌍',color:'#3e82f7',os:['Linux'],desc:'高性能内网穿透工具',tags:['内网穿透'],link:'scripts/内网穿透/frps.sh'},
+            {name:'RabbitMQ',category:'其他',icon:'📨',color:'#f66000',os:['Ubuntu','Debian'],desc:'开源消息队列',tags:['MQ'],link:'scripts/其他/rabbitmq.sh'}
+        ];
+        function renderTools(filter='all',keyword=''){
+            const grid=document.getElementById('toolsGrid');
+            grid.innerHTML='';
+            let filtered=tools;
+            if(filter!=='all')filtered=filtered.filter(t=>t.category===filter);
+            if(keyword){const kw=keyword.toLowerCase();filtered=filtered.filter(t=>t.name.toLowerCase().includes(kw)||t.desc.toLowerCase().includes(kw)||t.tags.some(tag=>tag.toLowerCase().includes(kw)));}
+            filtered.forEach((tool,index)=>{const card=document.createElement('div');card.className='tool-card';card.innerHTML=`<div class="tool-header"><div class="tool-icon" style="background:${tool.color}20;color:${tool.color}">${tool.icon}</div><div><div class="tool-name">${tool.name}</div><span class="tool-category" style="background:${tool.color}20;color:${tool.color}">${tool.category}</span><div class="tag-container">${tool.tags.map(tag=>`<span class="tag">${tag}</span>`).join('')}</div></div></div><p class="tool-desc">${tool.desc}</p><div class="tool-footer"><div>${tool.os.map(os=>`<span class="os-tag">${os}</span>`).join('')}</div><a href="${tool.link}" class="tool-btn" download>下载脚本</a></div>`;grid.appendChild(card);});}
+        document.getElementById('searchInput').addEventListener('input',e=>{const activeCat=document.querySelector('.cat-btn.active').dataset.cat;renderTools(activeCat,e.target.value);});
+        document.querySelectorAll('.cat-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderTools(btn.dataset.cat,document.getElementById('searchInput').value);});});
+        renderTools();
+    </script>
+</body>
+</html>

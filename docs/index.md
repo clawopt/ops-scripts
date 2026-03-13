@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: "🚀 开始学习"
-      link: "/计算机语言/java/"
+      link: "/计算机语言/java"
     - theme: alt
       text: "⭐ GitHub"
       link: "https://github.com/clawopt/ops-scripts"
@@ -16,22 +16,22 @@ hero:
 features:
   - title: "💻 计算机语言"
     details: "Java、C++、Python等编程语言系统学习，从入门到进阶"
-    link: "/计算机语言/java/"
+    link: "/计算机语言/java"
     tag: "编程基础"
 
   - title: "🔧 开发工具"
     details: "Git、CMake、Make等开发必备工具精讲"
-    link: "/开发工具/git/"
+    link: "/开发工具/git"
     tag: "工程化"
 
   - title: "🛠️ 专业技能"
     details: "数据库、存储、大数据等核心技术能力"
-    link: "/专业技能/database/"
+    link: "/专业技能/database"
     tag: "工程能力"
 
   - title: "🤖 AI时代"
     details: "数据结构、算法、大模型、深度学习等AI核心技术"
-    link: "/AI时代/algorithm/"
+    link: "/AI时代/algorithm"
     tag: "人工智能"
 
 ---
@@ -63,7 +63,7 @@ features:
 
 | 💻 Java | 🖥️ C++ | 🔰 Git | ⚙️ CMake | 🗄️ 数据库 | 🧠 算法 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| [开始学习](/计算机语言/java/) | [开始学习](/计算机语言/cpp/) | [开始学习](/开发工具/git/) | [开始学习](/开发工具/cmake/) | [开始学习](/专业技能/database/) | [开始学习](/AI时代/algorithm/) |
+| [开始学习](/计算机语言/java) | [开始学习](/计算机语言/cpp) | [开始学习](/开发工具/git) | [开始学习](/开发工具/cmake) | [开始学习](/专业技能/database) | [开始学习](/AI时代/algorithm) |
 
 </div>
 

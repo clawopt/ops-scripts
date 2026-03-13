@@ -18,6 +18,10 @@ export default defineConfig({
     logo: '🚀',
     siteTitle: 'ByteTech',
     search: { provider: 'local' },
+    appearance: true,
+    darkModeSwitchLabel: '切换主题',
+    lightModeSwitchTitle: '浅色模式',
+    darkModeSwitchTitle: '深色模式',
     
     nav: [
       { text: '首页', link: '/' },

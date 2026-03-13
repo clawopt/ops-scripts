@@ -2,76 +2,56 @@
 layout: home
 
 hero:
-  name: "OpsTools"
-  text: "运维工具一键安装脚本库"
-  tagline: "发现最好用的运维工具 • 500+ 常用软件一键安装脚本"
+  name: "ByteTech"
+  text: "迈向AI"
+  tagline: "面向 AI 时代的计算机学习入口 • 系统化学习路径 • 实战导向"
   actions:
     - theme: brand
-      text: "🚀 立即开始"
-      link: "/容器/docker"
+      text: "🚀 开始学习"
+      link: "/计算机语言/java/"
     - theme: alt
-      text: "⭐ Star 支持"
+      text: "⭐ GitHub"
       link: "https://github.com/clawopt/ops-scripts"
 
 features:
-  - title: "🐳 容器平台"
-    details: "Docker、K3s、Containerd、Portainer、Podman 等容器化工具"
-    link: "/容器/"
-    tag: "容器化"
+  - title: "💻 计算机语言"
+    details: "Java、C++、Python等编程语言系统学习，从入门到进阶"
+    link: "/计算机语言/java/"
+    tag: "编程基础"
 
-  - title: "🌐 Web服务器"
-    details: "Nginx、Caddy、Apache、Traefik、OpenResty 等Web服务器"
-    link: "/Web服务器/"
-    tag: "Web"
+  - title: "🔧 开发工具"
+    details: "Git、CMake、Make等开发必备工具精讲"
+    link: "/开发工具/git/"
+    tag: "工程化"
 
-  - title: "🗄️ 数据库"
-    details: "MySQL、PostgreSQL、Redis、MongoDB、ClickHouse 等数据库"
-    link: "/数据库/"
-    tag: "存储"
+  - title: "🛠️ 专业技能"
+    details: "数据库、存储、大数据等核心技术能力"
+    link: "/专业技能/database/"
+    tag: "工程能力"
 
-  - title: "🎛️ 面板工具"
-    details: "1Panel、宝塔面板、Nginx Proxy Manager 等可视化面板"
-    link: "/面板工具/"
-    tag: "管理"
-
-  - title: "🔄 CI/CD"
-    details: "Jenkins、GitLab、Argo CD、 Tekton 等持续集成工具"
-    link: "/CI_CD/"
-    tag: "自动化"
-
-  - title: "📊 监控运维"
-    details: "Prometheus、Grafana、Zabbix、ELK 等监控解决方案"
-    link: "/监控运维/"
-    tag: "监控"
-
-  - title: "🌍 内网穿透"
-    details: "frp、nps、ngrok 等内网穿透工具"
-    link: "/内网穿透/"
-    tag: "网络"
-
-  - title: "📦 开发工具"
-    details: "Node.js、Python、Go、Java 等开发环境一键安装"
-    link: "/其他/"
-    tag: "开发"
+  - title: "🤖 AI时代"
+    details: "数据结构、算法、大模型、深度学习等AI核心技术"
+    link: "/AI时代/algorithm/"
+    tag: "人工智能"
 
 ---
 
 <div class="hero-stats">
 
-## 📊 统计数据
+## 📊 学习路径
 
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-number">500+</div>
-    <div class="stat-label">安装脚本</div>
+    <div class="stat-number">4</div>
+    <div class="stat-label">学习方向</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">8</div>
-    <div class="stat-label">软件分类</div>
+    <div class="stat-number">12</div>
+    <div class="stat-label">核心教程</div>
   </div>
   <div class="stat-card">
     <div class="stat-number">100%</div>
-    <div class="stat-label">开源免费</div>
+    <div class="stat-label">免费开放</div>
   </div>
 </div>
 
@@ -79,11 +59,11 @@ features:
 
 <div class="quick-links">
 
-## ⚡ 热门脚本
+## 📚 热门教程
 
-| 🐳 Docker | 🌐 Nginx | 🗄️ MySQL | ⚡ Redis | ☸️ K3s | 📊 Grafana |
+| 💻 Java | 🖥️ C++ | 🔰 Git | ⚙️ CMake | 🗄️ 数据库 | 🧠 算法 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| [查看](/容器/docker) | [查看](/Web服务器/nginx) | [查看](/数据库/mysql) | [查看](/数据库/redis) | [查看](/容器/k3s) | [查看](/监控运维/prometheus-grafana) |
+| [开始学习](/计算机语言/java/) | [开始学习](/计算机语言/cpp/) | [开始学习](/开发工具/git/) | [开始学习](/开发工具/cmake/) | [开始学习](/专业技能/database/) | [开始学习](/AI时代/algorithm/) |
 
 </div>
 

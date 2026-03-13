@@ -1,98 +1,119 @@
 # 💻 计算机语言
 
-欢迎来到计算机学习板块。这里汇集了最主流的编程语言和开发工具教程，从入门到进阶，带你一步步掌握编程技能。
+欢迎来到计算机学习板块。涵盖前端、后端、运维等全栈技术。
 
-## 📚 教程列表
+## 📂 选择分类
 
-<div class="course-grid">
+### 🚀 前端开发
 
-<div class="course-card">
-  <div class="course-icon">☕</div>
-  <div class="course-title">Java</div>
-  <div class="course-desc">面向对象编程语言，企业级应用开发首选</div>
-  <a href="/计算机语言/java" class="course-link">开始学习 →</a>
+<div class="compact-grid">
+
+<a href="/计算机语言/前端/html" class="mini-card">
+  <span class="icon">📄</span>
+  <span class="name">HTML</span>
+</a>
+
+<a href="/计算机语言/前端/css" class="mini-card">
+  <span class="icon">🎨</span>
+  <span class="name">CSS</span>
+</a>
+
+<a href="/计算机语言/前端/javascript" class="mini-card">
+  <span class="icon">⚡</span>
+  <span class="name">JavaScript</span>
+</a>
+
+<a href="/计算机语言/前端/typescript" class="mini-card">
+  <span class="icon">🔷</span>
+  <span class="name">TypeScript</span>
+</a>
+
+<a href="/计算机语言/前端/react" class="mini-card">
+  <span class="icon">⚛️</span>
+  <span class="name">React</span>
+</a>
+
+<a href="/计算机语言/前端/vue" class="mini-card">
+  <span class="icon">💚</span>
+  <span class="name">Vue</span>
+</a>
+
 </div>
 
-<div class="course-card">
-  <div class="course-icon">⚡</div>
-  <div class="course-title">C++</div>
-  <div class="course-desc">高性能系统编程语言，底层开发必备</div>
-  <a href="/计算机语言/cpp" class="course-link">开始学习 →</a>
-</div>
+### ⚙️ 后端开发
 
-<div class="course-card">
-  <div class="course-icon">🔰</div>
-  <div class="course-title">Git</div>
-  <div class="course-desc">分布式版本控制系统，团队协作必备</div>
-  <a href="/计算机语言/git" class="course-link">开始学习 →</a>
-</div>
+<div class="compact-grid">
 
-<div class="course-card">
-  <div class="course-icon">⚙️</div>
-  <div class="course-title">CMake</div>
-  <div class="course-desc">跨平台构建系统生成器</div>
-  <a href="/计算机语言/cmake" class="course-link">开始学习 →</a>
-</div>
+<a href="/计算机语言/后端/java" class="mini-card">
+  <span class="icon">☕</span>
+  <span class="name">Java</span>
+</a>
 
-<div class="course-card">
-  <div class="course-icon">🔨</div>
-  <div class="course-title">Make</div>
-  <div class="course-desc">自动化构建工具，Makefile入门</div>
-  <a href="/计算机语言/make" class="course-link">开始学习 →</a>
-</div>
+<a href="/计算机语言/后端/python" class="mini-card">
+  <span class="icon">🐍</span>
+  <span class="name">Python</span>
+</a>
+
+<a href="/计算机语言/后端/go" class="mini-card">
+  <span class="icon">🐹</span>
+  <span class="name">Go</span>
+</a>
+
+<a href="/计算机语言/后端/cpp" class="mini-card">
+  <span class="icon">⚡</span>
+  <span class="name">C++</span>
+</a>
+
+<a href="/计算机语言/后端/csharp" class="mini-card">
+  <span class="icon">🔶</span>
+  <span class="name">C#</span>
+</a>
+
+<a href="/计算机语言/后端/rust" class="mini-card">
+  <span class="icon">🦀</span>
+  <span class="name">Rust</span>
+</a>
+
+<a href="/计算机语言/后端/nodejs" class="mini-card">
+  <span class="icon">🟢</span>
+  <span class="name">Node.js</span>
+</a>
 
 </div>
 
 <style>
-.course-grid {
+.compact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  margin: 24px 0;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
 }
 
-.course-card {
+.mini-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
-  padding: 24px;
-  transition: all 0.3s ease;
-}
-
-.course-card:hover {
-  border-color: var(--vp-c-brand-1);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.course-icon {
-  font-size: 36px;
-  margin-bottom: 12px;
-}
-
-.course-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-  color: var(--vp-c-text-1);
-}
-
-.course-desc {
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
-
-.course-link {
-  display: inline-block;
-  color: var(--vp-c-brand-1);
-  font-weight: 600;
+  border-radius: 8px;
   text-decoration: none;
-  transition: color 0.2s;
+  color: var(--vp-c-text-1);
+  transition: all 0.2s ease;
 }
 
-.course-link:hover {
-  color: var(--vp-c-brand-2);
+.mini-card:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-elv);
+  transform: translateY(-2px);
+}
+
+.mini-card .icon {
+  font-size: 18px;
+}
+
+.mini-card .name {
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 </style>

@@ -2,110 +2,68 @@
 
 欢迎来到AI时代板块。掌握AI核心技术，紧跟AI浪潮。
 
-## 📂 选择分类
+---
 
-### 📖 AI基础入门
+## 📖 AI基础入门
 
-<div class="compact-grid">
+- [人工智能概论](/AI时代/AI基础入门/人工智能概论)
+- [机器学习基础概念](/AI时代/AI基础入门/机器学习基础概念)
+- [深度学习基础概念](/AI时代/AI基础入门/深度学习基础概念)
+- [数学基础](/AI时代/AI基础入门/数学基础)
+- [AI开发环境搭建](/AI时代/AI基础入门/AI开发环境搭建)
 
-<a href="/AI时代/AI基础入门/" class="mini-card">
-  <span class="icon">🤖</span>
-  <span class="name">AI基础入门</span>
-</a>
+---
 
-</div>
+## 🧠 机器学习
 
-### 🧠 机器学习
+- [经典机器学习算法](/AI时代/机器学习/经典机器学习算法)
+- [线性回归与逻辑回归](/AI时代/机器学习/线性回归与逻辑回归)
+- [决策树与随机森林](/AI时代/机器学习/决策树与随机森林)
+- [支持向量机SVM](/AI时代/机器学习/支持向量机SVM)
+- [聚类算法K-Means](/AI时代/机器学习/聚类算法K-Means)
+- [降维算法PCA](/AI时代/机器学习/降维算法PCA)
+- [模型评估与优化](/AI时代/机器学习/模型评估与优化)
 
-<div class="compact-grid">
+---
 
-<a href="/AI时代/机器学习/" class="mini-card">
-  <span class="icon">🧠</span>
-  <span class="name">机器学习</span>
-</a>
+## 🔥 深度学习
 
-</div>
+- [神经网络基础](/AI时代/深度学习/神经网络基础)
+- [卷积神经网络CNN](/AI时代/深度学习/卷积神经网络CNN)
+- [循环神经网络RNN-LSTM](/AI时代/深度学习/循环神经网络RNN-LSTM)
+- [Transformer架构](/AI时代/深度学习/Transformer架构)
+- [梯度下降与优化器](/AI时代/深度学习/梯度下降与优化器)
+- [损失函数与激活函数](/AI时代/深度学习/损失函数与激活函数)
 
-### 🔥 深度学习
+---
 
-<div class="compact-grid">
+## 📝 大模型LLM
 
-<a href="/AI时代/深度学习/" class="mini-card">
-  <span class="icon">🔥</span>
-  <span class="name">深度学习</span>
-</a>
+- [大模型基本原理](/AI时代/大模型LLM/大模型基本原理)
+- [主流大模型介绍](/AI时代/大模型LLM/主流大模型介绍)
+- [提示词工程](/AI时代/大模型LLM/提示词工程)
+- [大模型微调基础](/AI时代/大模型LLM/大模型微调基础)
+- [RAG检索增强生成](/AI时代/大模型LLM/RAG检索增强生成)
+- [Agent智能体入门](/AI时代/大模型LLM/Agent智能体入门)
 
-</div>
+---
 
-### 📝 大模型LLM
+## 🛠️ AI框架与工具
 
-<div class="compact-grid">
+- [PythonAI生态](/AI时代/AI框架与工具/PythonAI生态)
+- [NumPy数值计算](/AI时代/AI框架与工具/NumPy数值计算)
+- [Pandas数据分析](/AI时代/AI框架与工具/Pandas数据分析)
+- [Matplotlib数据可视化](/AI时代/AI框架与工具/Matplotlib数据可视化)
+- [PyTorch深度学习框架](/AI时代/AI框架与工具/PyTorch深度学习框架)
+- [TensorFlow-Keras](/AI时代/AI框架与工具/TensorFlow-Keras)
 
-<a href="/AI时代/大模型LLM/" class="mini-card">
-  <span class="icon">📝</span>
-  <span class="name">大模型LLM</span>
-</a>
+---
 
-</div>
+## 🚀 AIGC应用开发
 
-### 🛠️ AI框架与工具
-
-<div class="compact-grid">
-
-<a href="/AI时代/AI框架与工具/" class="mini-card">
-  <span class="icon">🛠️</span>
-  <span class="name">AI框架与工具</span>
-</a>
-
-</div>
-
-### 🚀 AIGC应用开发
-
-<div class="compact-grid">
-
-<a href="/AI时代/AIGC应用开发/" class="mini-card">
-  <span class="icon">🚀</span>
-  <span class="name">AIGC应用开发</span>
-</a>
-
-</div>
-
-<style>
-.compact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 12px;
-  margin: 16px 0;
-}
-
-.mini-card {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 16px 20px;
-  background: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  text-decoration: none;
-  color: var(--vp-c-text-1);
-  transition: all 0.2s ease;
-}
-
-.mini-card:hover {
-  border-color: var(--vp-c-brand-1);
-  background: var(--vp-c-bg-elv);
-  transform: translateY(-2px);
-  text-decoration: none;
-}
-
-.mini-card .icon {
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.mini-card .name {
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-</style>
+- [文生图基础](/AI时代/AIGC应用开发/文生图基础)
+- [文生文与内容生成](/AI时代/AIGC应用开发/文生文与内容生成)
+- [语音合成与语音识别](/AI时代/AIGC应用开发/语音合成与语音识别)
+- [AI视频生成](/AI时代/AIGC应用开发/AI视频生成)
+- [AI辅助编程](/AI时代/AIGC应用开发/AI辅助编程)
+- [AI工作流实战](/AI时代/AIGC应用开发/AI工作流实战)

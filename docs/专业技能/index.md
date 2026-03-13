@@ -1,6 +1,6 @@
 # 🛠️ 专业技能
 
-欢迎来到专业技能板块。涵盖前端框架、后端框架、计算机基础、DevOps、数据库、大数据等核心技术。
+欢迎来到专业技能板块。涵盖前端框架、后端框架、计算机基础、Linux、DevOps、数据库、大数据等核心技术。
 
 ## 📂 选择分类
 
@@ -86,7 +86,7 @@
 
 </div>
 
-### 💻 计算机基础（含Linux）
+### 💻 计算机基础
 
 <div class="compact-grid">
 
@@ -115,22 +115,28 @@
   <span class="name">编译原理</span>
 </a>
 
-<a href="/专业技能/计算机基础/Linux" class="mini-card">
+</div>
+
+### 🐧 Linux
+
+<div class="compact-grid">
+
+<a href="/专业技能/Linux/入门" class="mini-card">
   <span class="icon">🐧</span>
   <span class="name">Linux入门</span>
 </a>
 
-<a href="/专业技能/计算机基础/Shell" class="mini-card">
+<a href="/专业技能/Linux/Shell" class="mini-card">
   <span class="icon">🐚</span>
   <span class="name">Shell编程</span>
 </a>
 
-<a href="/专业技能/计算机基础/命令" class="mini-card">
+<a href="/专业技能/Linux/命令" class="mini-card">
   <span class="icon">⌨️</span>
   <span class="name">常用命令</span>
 </a>
 
-<a href="/专业技能/计算机基础/运维" class="mini-card">
+<a href="/专业技能/Linux/运维" class="mini-card">
   <span class="icon">🛠️</span>
   <span class="name">运维实战</span>
 </a>

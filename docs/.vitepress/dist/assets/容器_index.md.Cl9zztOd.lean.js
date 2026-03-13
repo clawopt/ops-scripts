@@ -1,1 +1,0 @@
-import{_ as a,o as t,c as r,ag as o}from"./chunks/framework.BZohXCq9.js";const m=JSON.parse('{"title":"容器","description":"","frontmatter":{},"headers":[],"relativePath":"容器/index.md","filePath":"容器/index.md"}'),i={name:"容器/index.md"};function l(s,e,n,d,c,_){return t(),r("div",null,[...e[0]||(e[0]=[o("",2)])])}const p=a(i,[["render",l]]);export{m as __pageData,p as default};

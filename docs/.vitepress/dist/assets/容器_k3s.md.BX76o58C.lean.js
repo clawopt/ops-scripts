@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as n,ag as h}from"./chunks/framework.BZohXCq9.js";const d=JSON.parse('{"title":"k3s.sh","description":"","frontmatter":{},"headers":[],"relativePath":"容器/k3s.md","filePath":"容器/k3s.md"}'),t={name:"容器/k3s.md"};function l(p,s,k,e,F,r){return a(),n("div",null,[...s[0]||(s[0]=[h("",2)])])}const C=i(t,[["render",l]]);export{d as __pageData,C as default};

@@ -1,1 +1,0 @@
-import{_ as e,o as i,c as r,ag as t}from"./chunks/framework.BZohXCq9.js";const h=JSON.parse('{"title":"Ops Scripts","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),l={name:"index.md"};function s(o,a,n,p,_,c){return i(),r("div",null,[...a[0]||(a[0]=[t("",4)])])}const f=e(l,[["render",s]]);export{h as __pageData,f as default};

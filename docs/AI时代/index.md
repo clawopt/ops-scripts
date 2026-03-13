@@ -41,20 +41,20 @@
 
 <div class="compact-grid">
 
-<a href="/AI时代/LLM/" class="mini-card">
+<a href="/AI时代/大模型LLM/" class="mini-card">
   <span class="icon">📝</span>
   <span class="name">大模型LLM</span>
 </a>
 
 </div>
 
-### 🛠️ AI框架工具
+### 🛠️ AI框架与工具
 
 <div class="compact-grid">
 
-<a href="/AI时代/AI框架/" class="mini-card">
+<a href="/AI时代/AI框架与工具/" class="mini-card">
   <span class="icon">🛠️</span>
-  <span class="name">AI框架工具</span>
+  <span class="name">AI框架与工具</span>
 </a>
 
 </div>
@@ -63,7 +63,7 @@
 
 <div class="compact-grid">
 
-<a href="/AI时代/AIGC/" class="mini-card">
+<a href="/AI时代/AIGC应用开发/" class="mini-card">
   <span class="icon">🚀</span>
   <span class="name">AIGC应用开发</span>
 </a>
@@ -73,7 +73,7 @@
 <style>
 .compact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 12px;
   margin: 16px 0;
 }
@@ -82,7 +82,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 16px;
+  padding: 16px 20px;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
@@ -99,12 +99,12 @@
 }
 
 .mini-card .icon {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
 }
 
 .mini-card .name {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
 }

@@ -86,7 +86,7 @@
 
 </div>
 
-### 💻 计算机基础
+### 💻 计算机基础（含Linux）
 
 <div class="compact-grid">
 
@@ -115,28 +115,22 @@
   <span class="name">编译原理</span>
 </a>
 
-</div>
-
-### 🐧 Linux
-
-<div class="compact-grid">
-
-<a href="/专业技能/Linux/入门" class="mini-card">
+<a href="/专业技能/计算机基础/Linux" class="mini-card">
   <span class="icon">🐧</span>
   <span class="name">Linux入门</span>
 </a>
 
-<a href="/专业技能/Linux/shell" class="mini-card">
+<a href="/专业技能/计算机基础/Shell" class="mini-card">
   <span class="icon">🐚</span>
   <span class="name">Shell编程</span>
 </a>
 
-<a href="/专业技能/Linux/命令" class="mini-card">
+<a href="/专业技能/计算机基础/命令" class="mini-card">
   <span class="icon">⌨️</span>
   <span class="name">常用命令</span>
 </a>
 
-<a href="/专业技能/Linux/运维" class="mini-card">
+<a href="/专业技能/计算机基础/运维" class="mini-card">
   <span class="icon">🛠️</span>
   <span class="name">运维实战</span>
 </a>
@@ -294,32 +288,6 @@
 <a href="/专业技能/游戏开发/cocos" class="mini-card">
   <span class="icon">🥥</span>
   <span class="name">Cocos</span>
-</a>
-
-</div>
-
-### 🤖 AI/机器学习
-
-<div class="compact-grid">
-
-<a href="/专业技能/AI/大模型" class="mini-card">
-  <span class="icon">📝</span>
-  <span class="name">大模型</span>
-</a>
-
-<a href="/专业技能/AI/深度学习" class="mini-card">
-  <span class="icon">🔥</span>
-  <span class="name">深度学习</span>
-</a>
-
-<a href="/专业技能/AI/pytorch" class="mini-card">
-  <span class="icon">🔥</span>
-  <span class="name">PyTorch</span>
-</a>
-
-<a href="/专业技能/AI/tensorflow" class="mini-card">
-  <span class="icon">📊</span>
-  <span class="name">TensorFlow</span>
 </a>
 
 </div>

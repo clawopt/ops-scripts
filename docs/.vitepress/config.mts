@@ -13,6 +13,7 @@ export default defineConfig({
     logo: '💻',
     siteTitle: 'ByteTech',
     search: { provider: 'local' },
+    ignoreDeadLinks: true,
     
     nav: [
       { text: '🏠 首页', link: '/' },

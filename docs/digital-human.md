@@ -75,7 +75,7 @@ text-decoration: none !important;
 
 <section class="py-8 max-w-6xl mx-auto px-6">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-<a href="#intro" class="block bg-white p-6 rounded-2xl border border-slate-100 card-hover no-underline">
+<a href="#intro" class="block bg-white p-6 rounded-2xl border border-slate-100 card-hover no-underline text-center">
 <div class="flex items-center justify-center mb-4">
 <div class="w-12 h-12 tool-icon text-white rounded-xl flex items-center justify-center">
 <span class="iconify text-2xl" data-icon="mdi:book-open-page-variant"></span>
@@ -84,7 +84,7 @@ text-decoration: none !important;
 <h3 class="font-bold text-lg mb-2 text-slate-900">数字人介绍</h3>
 <p class="text-sm text-slate-500">了解什么是数字人，技术原理和应用场景</p>
 </a>
-<a href="#tools" class="block bg-white p-6 rounded-2xl border border-slate-100 card-hover no-underline">
+<a href="#tools" class="block bg-white p-6 rounded-2xl border border-slate-100 card-hover no-underline text-center">
 <div class="flex items-center justify-center mb-4">
 <div class="w-12 h-12 tool-icon text-white rounded-xl flex items-center justify-center">
 <span class="iconify text-2xl" data-icon="mdi:apps"></span>
@@ -93,7 +93,7 @@ text-decoration: none !important;
 <h3 class="font-bold text-lg mb-2 text-slate-900">主流工具</h3>
 <p class="text-sm text-slate-500">详细介绍国内外数字人平台</p>
 </a>
-<a href="#comparison" class="block bg-white p-6 rounded-2xl border border-slate-100 card-hover no-underline">
+<a href="#comparison" class="block bg-white p-6 rounded-2xl border border-slate-100 card-hover no-underline text-center">
 <div class="flex items-center justify-center mb-4">
 <div class="w-12 h-12 tool-icon text-white rounded-xl flex items-center justify-center">
 <span class="iconify text-2xl" data-icon="mdi:compare"></span>
@@ -568,11 +568,11 @@ text-decoration: none !important;
 </div>
 </div>
 
+<div class="max-w-6xl mx-auto">
 <div class="flex items-center gap-3 mb-8">
 <div class="w-1 h-8 gradient-bg rounded-full"></div>
 <h2 id="comparison" class="text-3xl font-bold text-slate-900">选型建议</h2>
 </div>
-<div class="bg-white p-6 rounded-2xl shadow-sm mb-8 max-w-6xl mx-auto">
 <div class="overflow-x-auto w-full">
 <table class="w-full">
 <thead>
@@ -656,7 +656,7 @@ text-decoration: none !important;
 <td class="p-4 text-slate-600">低</td>
 <td class="p-4 text-slate-600">优</td>
 <td class="p-4 text-slate-600">中</td>
-<td class="p-4 text-slate-600">政务、教育、客服、标准化口播</td>
+<td class="p-4 text-slate-600">金融、教育、媒体、政务场景等标准化的口播</td>
 </tr>
 <tr class="border-b border-slate-200 bg-pink-50">
 <td class="p-4 font-medium text-slate-900">剪映</td>

@@ -4,10 +4,10 @@ export default defineConfig({
   title: "X AI教程",
   description: "让AI成为你的智能生产力",
   lang: 'zh-CN',
-  base: '/ops-scripts/',
+  base: '/x-ai-web/',
   appearance: false,
   head: [
-    ['link', { rel: 'icon', href: '/ops-scripts/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/x-ai-web/favicon.ico' }],
     ['meta', { name: 'keywords', content: 'AI教程,AI工具,AI赛道,AI案例,智能生产力' }],
     ['meta', { name: 'author', content: 'X AI教程' }],
     ['script', { src: 'https://cdn.tailwindcss.com' }],

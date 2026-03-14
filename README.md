@@ -11,7 +11,7 @@
 
 ## � 开始学习
 
-访问 [ByteTech 网站](https://clawopt.github.io/ops-scripts/) 开始你的学习之旅！
+访问 [ByteTech 网站](https://clawopt.github.io/x-ai-web/) 开始你的学习之旅！
 
 ## � 项目结构
 

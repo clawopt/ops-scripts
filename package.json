@@ -1,5 +1,5 @@
 {
-  "name": "ops-scripts",
+  "name": "x-ai-web",
   "version": "2.0.0",
   "description": "现代化的运维/开发软件一键安装脚本集合，支持 Linux (Ubuntu/Debian/CentOS)",
   "type": "module",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clawopt/ops-scripts.git"
+    "url": "git+https://github.com/clawopt/x-ai-web.git"
   },
   "keywords": [
     "ops",
@@ -26,9 +26,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clawopt/ops-scripts/issues"
+    "url": "https://github.com/clawopt/x-ai-web/issues"
   },
-  "homepage": "https://github.com/clawopt/ops-scripts#readme",
+  "homepage": "https://github.com/clawopt/x-ai-web#readme",
   "devDependencies": {
     "pagefind": "^1.4.0",
     "vitepress": "^1.6.4",

@@ -576,3 +576,10 @@ body {
 .loading {
   animation: pulse 1.5s ease-in-out infinite;
 }
+
+/* 隐藏黑白主题切换按钮 */
+.VPNavBarAppearance,
+.VPSwitch,
+.VPNavBarExtra {
+  display: none !important;
+}

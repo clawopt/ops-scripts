@@ -5,6 +5,7 @@ export default defineConfig({
   description: "让AI成为你的智能生产力",
   lang: 'zh-CN',
   base: '/ops-scripts/',
+  appearance: false,
   head: [
     ['link', { rel: 'icon', href: '/ops-scripts/favicon.ico' }],
     ['meta', { name: 'keywords', content: 'AI教程,AI工具,AI赛道,AI案例,智能生产力' }],
@@ -17,7 +18,6 @@ export default defineConfig({
     logo: '🚀',
     siteTitle: 'X AI教程',
     search: { provider: 'local' },
-    appearance: false,
     
     nav: [
       { text: '首页', link: '/' },
@@ -30,31 +30,6 @@ export default defineConfig({
     footer: {
       message: '探索 AI 时代的无限可能',
       copyright: '© 2026 X AI教程. 保留所有权利.'
-    },
-
-    sidebar: [
-      {
-        text: '💻 计算机语言',
-        collapsed: false,
-        items: [
-          { text: '编程语言', link: '/计算机语言' },
-          { text: '构建工具', link: '/计算机语言' }
-        ]
-      },
-      {
-        text: '🛠️ 专业技能',
-        collapsed: false,
-        items: [
-          { text: '专业技能', link: '/专业技能' }
-        ]
-      },
-      {
-        text: '🤖 AI时代',
-        collapsed: false,
-        items: [
-          { text: 'AI时代', link: '/AI时代' }
-        ]
-      }
-    ]
+    }
   }
 })

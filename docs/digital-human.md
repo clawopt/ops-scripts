@@ -105,7 +105,7 @@ text-decoration: none !important;
 </div>
 </section>
 
-<section id="intro" class="py-12 max-w-6xl mx-auto px-6">
+<section id="intro" class="py-8 max-w-6xl mx-auto px-6">
 <div class="flex items-center gap-3 mb-8">
 <div class="w-1 h-8 gradient-bg rounded-full"></div>
 <h2 class="text-3xl font-bold text-slate-900">什么是数字人？</h2>
@@ -192,7 +192,7 @@ text-decoration: none !important;
 </div>
 </section>
 
-<section id="tools" class="py-12 max-w-6xl mx-auto px-6">
+<section id="tools" class="py-8 max-w-6xl mx-auto px-6">
 <div class="flex items-center gap-3 mb-8">
 <div class="w-1 h-8 gradient-bg rounded-full"></div>
 <h2 class="text-3xl font-bold text-slate-900">国际主流数字人平台</h2>
@@ -568,9 +568,12 @@ text-decoration: none !important;
 </div>
 </div>
 
-<h3 id="comparison" class="text-2xl font-bold mb-6 text-slate-900">核心优劣对比表（2026最新）</h3>
-<div class="overflow-x-auto mb-8">
-<div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl p-6">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-1 h-8 gradient-bg rounded-full"></div>
+<h2 id="comparison" class="text-3xl font-bold text-slate-900">选型建议</h2>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm mb-8 max-w-6xl mx-auto">
+<div class="overflow-x-auto w-full">
 <table class="w-full">
 <thead>
 <tr class="border-b-2 border-slate-200">
@@ -689,8 +692,9 @@ text-decoration: none !important;
 </table>
 </div>
 </div>
+</section>
 
-<h3 class="text-2xl font-bold mb-6 text-slate-900 mt-16">选型建议</h3>
+<section class="py-8 max-w-6xl mx-auto px-6">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
 <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl border-2 border-blue-200">
 <div class="flex items-center gap-3 mb-4">
@@ -785,7 +789,7 @@ text-decoration: none !important;
 
 
 
-<section class="py-12 max-w-6xl mx-auto px-6">
+<section class="py-8 max-w-6xl mx-auto px-6">
 <div class="gradient-bg rounded-3xl p-8 text-white">
 <div class="flex flex-col md:flex-row items-center gap-8">
 <div class="flex-1">

@@ -98,7 +98,7 @@ layout: home
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
     <div>
       <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">X AI</span>，让AI成为你的智能生产力
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">x-AI</span>，让AI成为你的智能生产力
       </h1>
       <p class="text-lg text-slate-500 mb-10 max-w-lg leading-relaxed">
         探索 AI 工具、赛道与案例，引领智能未来。我们提供最前沿的AI技术和应用，帮助你抓住AI时代的机遇。

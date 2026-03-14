@@ -52,7 +52,7 @@ layout: home
   }
 </style>
 
-<section class="relative pt-20 pb-32 overflow-hidden hero-gradient">
+<section class="relative pt-10 pb-16 overflow-hidden hero-gradient">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
     <div>
       <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
@@ -121,7 +121,7 @@ layout: home
 </section>
 
 
-<section class="py-16 max-w-7xl mx-auto px-6">
+<section class="py-8 max-w-7xl mx-auto px-6">
   <div class="flex justify-between items-end mb-10">
     <div class="max-w-xl">
       <h2 class="text-3xl font-bold mb-4 flex items-center gap-2"><span class="iconify text-2xl" data-icon="solar:flame-bold"></span> 热门赛道</h2>

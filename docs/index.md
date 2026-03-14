@@ -187,15 +187,15 @@ layout: home
     <div class="flex overflow-x-auto gap-6 pb-4">
       <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
         <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200">
-          <span class="text-white font-bold text-lg">ClawGPT</span>
+          <span class="iconify text-3xl text-white" data-icon="solar:chat-square-code-bold-duotone"></span>
         </div>
-        <h3 class="font-bold text-lg mb-2">ClawGPT</h3>
+        <h3 class="font-bold text-lg mb-2">OpenClaw</h3>
         <p class="text-sm text-slate-500 mb-6 font-light">智能对话助手，提供精准回答和创意内容。</p>
         <div class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block">AI 助手</div>
       </div>
       <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
         <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-teal-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-green-200">
-          <span class="text-white font-bold text-lg">Seedance</span>
+          <span class="iconify text-3xl text-white" data-icon="solar:video-frame-play-horizontal-bold-duotone"></span>
         </div>
         <h3 class="font-bold text-lg mb-2">Seedance 2.0</h3>
         <p class="text-sm text-slate-500 mb-6 font-light">AI 视频生成工具，快速创建高质量视频内容。</p>
@@ -203,7 +203,7 @@ layout: home
       </div>
       <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
         <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-200">
-          <span class="text-white font-bold text-lg">Sora</span>
+          <span class="iconify text-3xl text-white" data-icon="simple-icons:openai"></span>
         </div>
         <h3 class="font-bold text-lg mb-2">Sora</h3>
         <p class="text-sm text-slate-500 mb-6 font-light">AI 视频生成工具，支持长视频创作。</p>
@@ -211,7 +211,7 @@ layout: home
       </div>
       <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
         <div class="w-16 h-16 bg-gradient-to-br from-orange-600 to-red-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-200">
-          <span class="text-white font-bold text-lg">Midjourney</span>
+          <span class="iconify text-3xl text-white" data-icon="simple-icons:midjourney"></span>
         </div>
         <h3 class="font-bold text-lg mb-2">Midjourney</h3>
         <p class="text-sm text-slate-500 mb-6 font-light">AI 图像生成工具，创造惊艳视觉效果。</p>
@@ -219,7 +219,7 @@ layout: home
       </div>
       <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
         <div class="w-16 h-16 bg-gradient-to-br from-yellow-600 to-amber-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-yellow-200">
-          <span class="text-white font-bold text-lg">Suno</span>
+          <span class="iconify text-3xl text-white" data-icon="simple-icons:suno"></span>
         </div>
         <h3 class="font-bold text-lg mb-2">Suno AI</h3>
         <p class="text-sm text-slate-500 mb-6 font-light">AI 音乐生成工具，创作独特音乐作品。</p>
@@ -227,7 +227,7 @@ layout: home
       </div>
       <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
         <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200">
-          <span class="text-white font-bold text-lg">ChatGPT</span>
+          <span class="iconify text-3xl text-white" data-icon="simple-icons:openai"></span>
         </div>
         <h3 class="font-bold text-lg mb-2">ChatGPT</h3>
         <p class="text-sm text-slate-500 mb-6 font-light">智能对话助手，提供全面的AI交互体验。</p>

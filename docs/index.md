@@ -26,6 +26,15 @@ layout: home
     transform: translateY(-5px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
+
+  /* 隐藏滚动条但保留功能 */
+  .flex.overflow-x-auto {
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .flex.overflow-x-auto::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
 </style>
 
 <section class="relative pt-20 pb-32 overflow-hidden hero-gradient">
@@ -38,10 +47,10 @@ layout: home
         探索 AI 工具、赛道与案例，引领智能未来。我们提供最前沿的AI技术和应用，帮助你抓住AI时代的机遇。
       </p>
       <div class="flex flex-wrap gap-4">
-        <a class="px-8 py-4 bg-white text-slate-600 rounded-2xl font-bold border border-slate-200 flex items-center gap-2 hover:bg-slate-50 transition-colors" href="/tracks">
+        <a class="px-8 py-4 bg-white text-slate-600 rounded-2xl font-bold border border-slate-200 flex items-center gap-2 hover:bg-slate-50 transition-colors no-underline" href="/tracks">
           开启热门赛道
         </a>
-        <a class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold shadow-2xl shadow-blue-200 flex items-center gap-2 hover:scale-105 transition-transform" href="/tools">
+        <a class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold shadow-2xl shadow-blue-200 flex items-center gap-2 hover:scale-105 transition-transform no-underline" href="/tools">
           探索AI工具 <span class="iconify" data-icon="solar:arrow-right-up-bold"></span>
         </a>
       </div>
@@ -96,6 +105,8 @@ layout: home
   </div>
 </section>
 
+
+
 <section class="py-12 bg-slate-900 text-white">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -119,13 +130,15 @@ layout: home
   </div>
 </section>
 
-<section class="py-24 max-w-7xl mx-auto px-6">
-  <div class="flex justify-between items-end mb-16">
+
+
+<section class="py-16 max-w-7xl mx-auto px-6">
+  <div class="flex justify-between items-end mb-10">
     <div class="max-w-xl">
       <h2 class="text-3xl font-bold mb-4 flex items-center gap-2"><span class="iconify text-2xl" data-icon="solar:flame-bold"></span> 热门赛道</h2>
       <p class="text-slate-500">2026年最具潜力的AI应用方向，从技术到落地全流程解析。</p>
     </div>
-    <a class="text-blue-600 font-bold flex items-center gap-1 hover:underline" href="/tracks">查看全部 <span class="iconify" data-icon="solar:arrow-right-linear"></span></a>
+    <a class="text-blue-600 font-bold flex items-center gap-1 hover:no-underline" href="/tracks">查看全部 <span class="iconify" data-icon="solar:arrow-right-linear"></span></a>
   </div>
   <div class="flex overflow-x-auto gap-6 pb-4">
     <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
@@ -142,11 +155,11 @@ layout: home
       </div>
       <h3 class="font-bold text-lg mb-2">数字人</h3>
       <p class="text-sm text-slate-500 mb-6 font-light">AI 驱动的虚拟数字人技术，为企业提供智能交互。</p>
-      <div class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full inline-block">月均收益 ¥8k+</div>
+      <div class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full inline-block">解放生产力</div>
     </div>
     <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
       <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
-        <span class="iconify text-3xl" data-icon="solar:book-open-bold"></span>
+        <span class="iconify text-3xl" data-icon="solar:book-open-bold-duotone"></span>
       </div>
       <h3 class="font-bold text-lg mb-2">漫画</h3>
       <p class="text-sm text-slate-500 mb-6 font-light">AI 创作漫画内容，快速生成故事和图像。</p>
@@ -154,7 +167,7 @@ layout: home
     </div>
     <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
       <div class="w-14 h-14 bg-pink-50 text-pink-600 rounded-2xl flex items-center justify-center mb-6">
-        <span class="iconify text-3xl" data-icon="solar:film-reel-bold"></span>
+        <span class="iconify text-3xl" data-icon="solar:film-reel-bold-duotone"></span>
       </div>
       <h3 class="font-bold text-lg mb-2">视频剪辑</h3>
       <p class="text-sm text-slate-500 mb-6 font-light">AI 辅助视频编辑与特效，提升制作效率。</p>
@@ -171,14 +184,16 @@ layout: home
   </div>
 </section>
 
-<section class="py-24 bg-slate-50">
+
+
+<section class="py-16 bg-slate-50">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="flex justify-between items-end mb-16">
+    <div class="flex justify-between items-end mb-10">
       <div class="max-w-xl">
         <h2 class="text-3xl font-bold mb-4 flex items-center gap-2"><span class="iconify text-2xl" data-icon="solar:rocket-bold"></span> 顶流工具</h2>
         <p class="text-slate-500">2026年最受欢迎的AI工具，助力你高效完成任务。</p>
       </div>
-      <a class="text-blue-600 font-bold flex items-center gap-1 hover:underline" href="/tools">查看全部 <span class="iconify" data-icon="solar:arrow-right-linear"></span></a>
+      <a class="text-blue-600 font-bold flex items-center gap-1 hover:no-underline" href="/tools">查看全部 <span class="iconify" data-icon="solar:arrow-right-linear"></span></a>
     </div>
     <div class="flex overflow-x-auto gap-6 pb-4">
       <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
@@ -233,13 +248,15 @@ layout: home
   </div>
 </section>
 
-<section class="py-24 max-w-7xl mx-auto px-6">
-  <div class="flex justify-between items-end mb-16">
+
+
+<section class="py-16 max-w-7xl mx-auto px-6">
+  <div class="flex justify-between items-end mb-10">
     <div class="max-w-xl">
       <h2 class="text-3xl font-bold mb-4 flex items-center gap-2"><span class="iconify text-2xl" data-icon="solar:chart-square-bold"></span> 案例解析</h2>
       <p class="text-slate-500">AI 技术在实际应用中的成功案例，为你提供参考和启发。</p>
     </div>
-    <a class="text-blue-600 font-bold flex items-center gap-1 hover:underline" href="/cases">查看全部 <span class="iconify" data-icon="solar:arrow-right-linear"></span></a>
+    <a class="text-blue-600 font-bold flex items-center gap-1 hover:no-underline" href="/cases">查看全部 <span class="iconify" data-icon="solar:arrow-right-linear"></span></a>
   </div>
   <div class="grid md:grid-cols-2 gap-6">
     <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover">
@@ -292,3 +309,4 @@ layout: home
     </div>
   </div>
 </section>
+

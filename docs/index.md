@@ -148,7 +148,7 @@ layout: home
     </div>
     <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
       <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
-        <span class="iconify text-3xl" data-icon="solar:book-open-bold-duotone"></span>
+        <span class="iconify text-3xl" data-icon="solar:gallery-bold-duotone"></span>
       </div>
       <h3 class="font-bold text-lg mb-2">漫画</h3>
       <p class="text-sm text-slate-500 mb-6 font-light">AI 创作漫画内容，快速生成故事和图像。</p>
@@ -156,7 +156,7 @@ layout: home
     </div>
     <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover min-w-[280px]">
       <div class="w-14 h-14 bg-pink-50 text-pink-600 rounded-2xl flex items-center justify-center mb-6">
-        <span class="iconify text-3xl" data-icon="solar:film-reel-bold-duotone"></span>
+        <span class="iconify text-3xl" data-icon="solar:clapperboard-bold-duotone"></span>
       </div>
       <h3 class="font-bold text-lg mb-2">视频剪辑</h3>
       <p class="text-sm text-slate-500 mb-6 font-light">AI 辅助视频编辑与特效，提升制作效率。</p>

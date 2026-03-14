@@ -45,6 +45,11 @@ layout: home
   a:hover {
     text-decoration: none !important;
   }
+
+  /* 确保探索AI工具按钮的字体颜色是白色 */
+  .explore-btn {
+    color: white !important;
+  }
 </style>
 
 <section class="relative pt-20 pb-32 overflow-hidden hero-gradient">
@@ -60,7 +65,7 @@ layout: home
         <a class="px-8 py-4 bg-white text-slate-600 rounded-2xl font-bold border border-slate-200 flex items-center gap-2 hover:bg-slate-50 transition-colors no-underline" href="/tracks">
           开启热门赛道
         </a>
-        <a class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold shadow-2xl shadow-blue-200 flex items-center gap-2 hover:scale-105 transition-transform no-underline" href="/tools">
+        <a class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold shadow-2xl shadow-blue-200 flex items-center gap-2 hover:scale-105 transition-transform no-underline explore-btn" href="/tools">
           探索AI工具 <span class="iconify" data-icon="solar:arrow-right-up-bold"></span>
         </a>
       </div>

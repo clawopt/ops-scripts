@@ -942,30 +942,3 @@ AI短剧漫剧是指利用人工智能技术，将文字、小说、剧本等内
 </div>
 </section>
 
-<section class="py-8 max-w-6xl mx-auto px-6">
-<div class="gradient-bg rounded-3xl p-8 text-white">
-<div class="flex flex-col md:flex-row items-center gap-8">
-<div class="flex-1">
-<h2 class="text-2xl md:text-3xl font-bold mb-4">开始你的AI短剧漫剧之旅</h2>
-<p class="opacity-90 mb-6">
-AI短剧漫剧技术正在快速发展，选择适合自己的工具，开始创作吧！
-</p>
-<div class="flex flex-wrap gap-3">
-<a href="https://jimengai.com/" target="_blank" class="inline-flex items-center gap-2 bg-white text-indigo-600 font-bold px-6 py-3 rounded-xl hover:bg-opacity-90 transition-all no-underline">
-<span class="iconify" data-icon="solar:play-bold-duotone"></span>
-体验即梦AI
-</a>
-<a href="https://wawawriter.com/" target="_blank" class="inline-flex items-center gap-2 bg-white/20 text-white font-bold px-6 py-3 rounded-xl hover:bg-white/30 transition-all no-underline">
-<span class="iconify" data-icon="solar:book-bold-duotone"></span>
-蛙蛙写作
-</a>
-</div>
-</div>
-<div class="w-full md:w-48 h-48 flex-shrink-0">
-<div class="w-full h-full bg-white/10 backdrop-blur-sm rounded-3xl flex items-center justify-center">
-<span class="iconify text-7xl" data-icon="solar:gallery-bold-duotone" style="color: white;"></span>
-</div>
-</div>
-</div>
-</div>
-</section>

@@ -55,6 +55,56 @@ export default defineConfig({
     footer: {
       message: '探索 AI 时代的无限可能',
       copyright: '© 2026 x-AI教程. 保留所有权利.'
-    }
+    },
+
+    sidebar: {
+      '/drama-comic/': [
+        {
+          text: '短剧漫剧教程',
+          collapsed: false,
+          items: [
+            { 
+              text: '工具介绍', 
+              link: '/drama-comic/',
+            },
+            { 
+              text: '学习教程', 
+              link: '/drama-comic/tutorial',
+              collapsed: true,
+              items: [
+                { text: '基础入门', link: '/drama-comic/tutorial#基础入门' },
+                { text: '学习路径', link: '/drama-comic/tutorial#学习路径' },
+                { text: '推荐学习资源', link: '/drama-comic/tutorial#推荐学习资源' },
+                { text: '常见问题', link: '/drama-comic/tutorial#常见问题' }
+              ]
+            },
+            { 
+              text: '视频教程', 
+              link: '/drama-comic/videos',
+              collapsed: true,
+              items: [
+                { text: '入门视频', link: '/drama-comic/videos#入门视频' },
+                { text: '进阶视频', link: '/drama-comic/videos#进阶视频' },
+                { text: '实战案例', link: '/drama-comic/videos#实战案例' },
+                { text: '工具专项教程', link: '/drama-comic/videos#工具专项教程' }
+              ]
+            },
+            { 
+              text: '实践项目', 
+              link: '/drama-comic/projects',
+              collapsed: true,
+              items: [
+                { text: '入门项目', link: '/drama-comic/projects#入门项目' },
+                { text: '进阶项目', link: '/drama-comic/projects#进阶项目' },
+                { text: '高级项目', link: '/drama-comic/projects#高级项目' },
+                { text: '项目提交与反馈', link: '/drama-comic/projects#项目提交与反馈' }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    outline: false
   }
 })

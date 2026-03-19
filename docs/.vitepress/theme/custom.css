@@ -628,3 +628,54 @@ body {
 .dark .digital-human-tutorial .card-hover:hover {
   box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.3);
 }
+
+/* 调整文档页面宽度 */
+.VPDoc {
+  max-width: 100% !important;
+}
+
+.vp-doc {
+  max-width: 100% !important;
+}
+
+/* 调整文档内容容器 */
+.VPDoc .content-container {
+  max-width: 100% !important;
+  padding: 0 0 40px !important;
+}
+
+/* 隐藏右侧目录栏 */
+.VPDocOutlineDropdown,
+.VPDocAsideOutline {
+  display: none !important;
+}
+
+/* 调整侧边栏宽度比例 */
+.VPSidebar {
+  width: 280px !important;
+}
+
+.VPContent {
+  padding-left: 280px !important;
+}
+
+/* 调整文档内容区域 */
+.VPDoc .content {
+  padding-right: 0 !important;
+  max-width: 100% !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 960px) {
+  .VPDoc {
+    max-width: 100% !important;
+  }
+  
+  .VPContent {
+    padding-left: 0 !important;
+  }
+  
+  .VPDoc .content-container {
+    padding: 0 20px !important;
+  }
+}

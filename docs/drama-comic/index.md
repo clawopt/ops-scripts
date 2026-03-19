@@ -1,5 +1,5 @@
 ---
-layout: home
+title: 工具介绍
 ---
 
 <style>
@@ -37,8 +37,7 @@ text-decoration: none !important;
 }
 </style>
 
-<div data-pagefind-body>
-<section class="relative pt-16 pb-12 overflow-hidden">
+<section data-pagefind-body class="relative pt-16 pb-12 overflow-hidden">
 <div class="max-w-6xl mx-auto px-6">
 <div class="gradient-bg rounded-3xl p-8 md:p-12 text-white">
 <div class="flex flex-col md:flex-row items-center gap-8">
@@ -74,7 +73,7 @@ text-decoration: none !important;
 </div>
 </section>
 
-<section class="py-8 max-w-6xl mx-auto px-6">
+<section data-pagefind-body class="py-8 max-w-6xl mx-auto px-6">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 <a href="#intro" class="block bg-white p-6 rounded-2xl border border-slate-100 card-hover no-underline text-center">
 <div class="flex items-center justify-center mb-4">
@@ -106,7 +105,7 @@ text-decoration: none !important;
 </div>
 </section>
 
-<section id="intro" class="py-8 max-w-6xl mx-auto px-6">
+<section data-pagefind-body id="intro" class="py-8 max-w-6xl mx-auto px-6">
 <div class="flex items-center gap-3 mb-8">
 <div class="w-1 h-8 gradient-bg rounded-full"></div>
 <h2 class="text-3xl font-bold text-slate-900">什么是AI短剧漫剧？</h2>
@@ -193,7 +192,7 @@ AI短剧漫剧是指利用人工智能技术，将文字、小说、剧本等内
 </div>
 </section>
 
-<section id="tools" class="py-8 max-w-6xl mx-auto px-6">
+<section data-pagefind-body id="tools" class="py-8 max-w-6xl mx-auto px-6">
 <div class="flex items-center gap-3 mb-8">
 <div class="w-1 h-8 gradient-bg rounded-full"></div>
 <h2 class="text-3xl font-bold text-slate-900">国际全能型AI短剧漫剧工具</h2>
@@ -852,7 +851,7 @@ AI短剧漫剧是指利用人工智能技术，将文字、小说、剧本等内
 </div>
 </section>
 
-<section class="py-8 max-w-6xl mx-auto px-6">
+<section data-pagefind-body class="py-8 max-w-6xl mx-auto px-6">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
 <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl border-2 border-blue-200">
 <div class="flex items-center gap-3 mb-4">

@@ -179,6 +179,13 @@ body {
   border-right: 1px solid var(--border) !important;
 }
 
+.VPSidebarItem.level-0 > .item {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  padding: 16px 12px 8px 12px !important;
+}
+
 .VPSidebarItem.is-link .item {
   border-radius: 10px !important;
   margin: 4px 12px !important;

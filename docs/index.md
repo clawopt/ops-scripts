@@ -148,36 +148,36 @@ layout: home
   <div class="category-section">
     <div class="category-layout">
       <div class="category-intro">
-        <img src="./images/oc.svg" alt="AI 编程工具" class="category-intro-image">
-        <h3 class="category-intro-title">AI 编程工具</h3>
+        <img src="./images/oc.svg" alt="AI 编程教程" class="category-intro-image">
+        <h3 class="category-intro-title">AI 编程教程</h3>
         <p class="category-intro-desc">使用 AI 原生编程工具提升开发效率，包括 OpenClaw、Claude Code、Cursor 和 Trae 等智能代码助手。</p>
       </div>
       <div class="tutorials-list">
         <a href="/x-ai-web/openclaw/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;"><img src="./images/oc.svg" alt="OpenClaw" style="width: 100%; height: 100%; object-fit: contain;"></div>
           <div class="tutorial-content">
-            <div class="tutorial-title">OpenClaw</div>
-            <div class="tutorial-desc">AI 原生 IDE，智能代码补全</div>
+            <div class="tutorial-title">OpenClaw教程</div>
+            <div class="tutorial-desc">AI 私人助手，全天24h可用，无人值守编程</div>
           </div>
         </a>
         <a href="/x-ai-web/claude-code/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #d97706, #b45309); color: white;"><img src="./images/code.png" alt="Claude Code" style="width: 100%; height: 100%; object-fit: contain;"></div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Claude Code</div>
+            <div class="tutorial-title">Claude Code教程</div>
             <div class="tutorial-desc">Anthropic 编程助手，长上下文</div>
           </div>
         </a>
         <a href="/x-ai-web/cursor/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;"><img src="./images/cursor.png" alt="Cursor" style="width: 100%; height: 100%; object-fit: contain;"></div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Cursor</div>
+            <div class="tutorial-title">Cursor教程</div>
             <div class="tutorial-desc">AI 代码编辑器，GPT-4 驱动</div>
           </div>
         </a>
         <a href="/x-ai-web/trae/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #10b981, #059669); color: white;"><img src="./images/trae.png" alt="Trae" style="width: 100%; height: 100%; object-fit: contain;"></div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Trae</div>
+            <div class="tutorial-title">Trae教程</div>
             <div class="tutorial-desc">AI 原生 IDE，智能代码生成</div>
           </div>
         </a>
@@ -188,36 +188,36 @@ layout: home
   <div class="category-section">
     <div class="category-layout">
       <div class="category-intro">
-        <img src="./images/python.png" alt="编程语言基础层" class="category-intro-image">
-        <h3 class="category-intro-title">编程语言基础层</h3>
+        <img src="./images/python.png" alt="Python教程" class="category-intro-image">
+        <h3 class="category-intro-title">Python教程</h3>
         <p class="category-intro-desc">掌握 AI 开发必备的编程语言和核心库，包括 Python 基础、NumPy 数值计算、Pandas 数据处理和 Matplotlib 可视化。</p>
       </div>
       <div class="tutorials-list">
         <a href="/x-ai-web/python/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white;">Py</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Python</div>
+            <div class="tutorial-title">Python教程</div>
             <div class="tutorial-desc">AI 生态核心语言，语法简洁，标准库丰富</div>
           </div>
         </a>
         <a href="/x-ai-web/numpy/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #4f46e5, #3730a3); color: white;">Np</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">NumPy</div>
+            <div class="tutorial-title">NumPy教程</div>
             <div class="tutorial-desc">数值计算基石，ndarray 数组，向量化运算</div>
           </div>
         </a>
         <a href="/x-ai-web/pandas/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">Pd</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Pandas</div>
+            <div class="tutorial-title">Pandas教程</div>
             <div class="tutorial-desc">表格数据处理，DataFrame 操作</div>
           </div>
         </a>
         <a href="/x-ai-web/matplotlib/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); color: white;">Mp</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Matplotlib</div>
+            <div class="tutorial-title">Matplotlib教程</div>
             <div class="tutorial-desc">静态可视化基础，出版级图表</div>
           </div>
         </a>
@@ -228,9 +228,9 @@ layout: home
   <div class="category-section">
     <div class="category-layout">
       <div class="category-intro">
-        <img src="./images/cpp.svg" alt="C++ 开发层" class="category-intro-image">
-        <h3 class="category-intro-title">C++ 开发层</h3>
-        <p class="category-intro-desc">从 C++ 基础到现代 C++ 特性，掌握 CMake 构建系统和 GDB 调试技能，为高性能计算和系统开发打下坚实基础。</p>
+        <img src="./images/cpp.svg" alt="C++教程" class="category-intro-image">
+        <h3 class="category-intro-title">C++教程</h3>
+        <p class="category-intro-desc">从 C++ 基础到现代 C++ 特性，掌握 CMake 构建系统和 GDB 调试技能，为AI高性能计算和系统开发打下坚实基础。</p>
       </div>
       <div class="tutorials-list">
         <a href="/x-ai-web/cpp/" class="tutorial-item">
@@ -243,21 +243,21 @@ layout: home
         <a href="/x-ai-web/modern-cpp/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;">C++17</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">现代 C++</div>
+            <div class="tutorial-title">Modern C++教程</div>
             <div class="tutorial-desc">智能指针，Lambda，移动语义</div>
           </div>
         </a>
         <a href="/x-ai-web/cmake/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2); color: white;">CM</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">CMake</div>
+            <div class="tutorial-title">CMake教程</div>
             <div class="tutorial-desc">跨平台构建，target 管理</div>
           </div>
         </a>
         <a href="/x-ai-web/gdb/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626); color: white;">GDB</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">GDB 调试</div>
+            <div class="tutorial-title">GDB教程</div>
             <div class="tutorial-desc">断点调试，变量查看</div>
           </div>
         </a>
@@ -268,8 +268,62 @@ layout: home
   <div class="category-section">
     <div class="category-layout">
       <div class="category-intro">
-        <img src="./images/cuda.png" alt="CUDA GPU 编程层" class="category-intro-image">
-        <h3 class="category-intro-title">CUDA GPU 编程层</h3>
+        <img src="./images/chroma.png" alt="AI数据库教程" class="category-intro-image">
+        <h3 class="category-intro-title">AI数据库教程</h3>
+        <p class="category-intro-desc">掌握多种AI数据库技术，包括 PG Vector、DuckDB、LanceDB、Milvus、Faiss 和 Chroma 等解决方案。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/pgvector/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white;">PGV</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">PG Vector 教程</div>
+            <div class="tutorial-desc">PostgreSQL 向量扩展，存储检索一体化</div>
+          </div>
+        </a>
+        <a href="/x-ai-web/duckdb/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white;">DD</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">DuckDB 教程</div>
+            <div class="tutorial-desc">嵌入式分析数据库，向量查询加速</div>
+          </div>
+        </a>
+        <a href="/x-ai-web/lancedb/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #10b981, #059669); color: white;">LD</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">LanceDB 教程</div>
+            <div class="tutorial-desc">Serverless AI数据库，云原生架构</div>
+          </div>
+        </a>
+        <a href="/x-ai-web/milvus/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">Mv</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Milvus 教程</div>
+            <div class="tutorial-desc">云原生AI数据库，十亿级规模</div>
+          </div>
+        </a>
+        <a href="/x-ai-web/faiss/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2); color: white;">Fs</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Faiss 教程</div>
+            <div class="tutorial-desc">Meta 向量检索库，PQ/HNSW</div>
+          </div>
+        </a>
+        <a href="/x-ai-web/chroma/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #ec4899, #db2777); color: white;">Ch</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Chroma 教程</div>
+            <div class="tutorial-desc">嵌入式向量库，轻量 RAG</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/cuda.png" alt="GPU CUDA 教程" class="category-intro-image">
+        <h3 class="category-intro-title">GPU CUDA 教程</h3>
         <p class="category-intro-desc">掌握 GPU 并行计算核心技能，学习 CUDA C++、CUDA CMake 构建和 CUDA GDB 调试。</p>
       </div>
       <div class="tutorials-list">
@@ -301,29 +355,29 @@ layout: home
   <div class="category-section">
     <div class="category-layout">
       <div class="category-intro">
-        <img src="./images/sklearn.svg" alt="传统机器学习层" class="category-intro-image">
-        <h3 class="category-intro-title">传统机器学习层</h3>
+        <img src="./images/sklearn.svg" alt="机器学习教程" class="category-intro-image">
+        <h3 class="category-intro-title">机器学习教程</h3>
         <p class="category-intro-desc">学习经典机器学习算法和工具，包括 Scikit-learn、XGBoost 和 LightGBM，打好 ML 基础。</p>
       </div>
       <div class="tutorials-list">
         <a href="/x-ai-web/sklearn/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #f7931e, #e07f00); color: white;">SK</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Scikit-learn</div>
+            <div class="tutorial-title">Scikit-learn教程</div>
             <div class="tutorial-desc">ML 算法，预处理，模型选择</div>
           </div>
         </a>
         <a href="/x-ai-web/xgboost/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #00b4d8, #0096c7); color: white;">XGB</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">XGBoost</div>
+            <div class="tutorial-title">XGBoost教程</div>
             <div class="tutorial-desc">梯度提升，回归/分类/排序</div>
           </div>
         </a>
         <a href="/x-ai-web/lightgbm/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: white;">LGB</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">LightGBM</div>
+            <div class="tutorial-title">LightGBM教程</div>
             <div class="tutorial-desc">微软 GBDT，速度快内存省</div>
           </div>
         </a>
@@ -334,29 +388,29 @@ layout: home
   <div class="category-section">
     <div class="category-layout">
       <div class="category-intro">
-        <img src="./images/pytorch.png" alt="深度学习框架层" class="category-intro-image">
-        <h3 class="category-intro-title">深度学习框架层</h3>
+        <img src="./images/pytorch.png" alt="深度学习教程" class="category-intro-image">
+        <h3 class="category-intro-title">深度学习教程</h3>
         <p class="category-intro-desc">掌握主流深度学习框架，包括 PyTorch 动态图、TensorFlow 生产部署和 PyTorch Lightning 工程化封装。</p>
       </div>
       <div class="tutorials-list">
         <a href="/x-ai-web/pytorch/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #ee4c2c, #d13b1c); color: white;">PT</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">PyTorch</div>
+            <div class="tutorial-title">PyTorch教程</div>
             <div class="tutorial-desc">动态图，自动微分，nn.Module</div>
           </div>
         </a>
         <a href="/x-ai-web/tensorflow/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #ff6f00, #e65100); color: white;">TF</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">TensorFlow/Keras</div>
+            <div class="tutorial-title">TensorFlow教程/Keras</div>
             <div class="tutorial-desc">静态图，生产部署，Keras API</div>
           </div>
         </a>
         <a href="/x-ai-web/pytorch-lightning/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #7c3aed, #6d28d9); color: white;">⚡</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">PyTorch Lightning</div>
+            <div class="tutorial-title">PyTorch Lightning教程</div>
             <div class="tutorial-desc">工程化封装，自动分布式</div>
           </div>
         </a>
@@ -367,37 +421,37 @@ layout: home
   <div class="category-section">
     <div class="category-layout">
       <div class="category-intro">
-        <img src="./images/transformers.jpeg" alt="大模型训练与微调层" class="category-intro-image">
-        <h3 class="category-intro-title">大模型训练与微调层</h3>
+        <img src="./images/transformers.jpeg" alt="大模型训练教程" class="category-intro-image">
+        <h3 class="category-intro-title">大模型训练教程</h3>
         <p class="category-intro-desc">学习大模型训练和微调技术，包括 Transformers 库、PEFT 高效微调、DeepSpeed 分布式训练和 Unsloth 快速微调。</p>
       </div>
       <div class="tutorials-list">
         <a href="/x-ai-web/transformers/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #ffcc00, #f0b400); color: #333;">🤗</div>
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #ffcc00, #f0b400); color: #333;">�</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Transformers</div>
+            <div class="tutorial-title">Transformers教程</div>
             <div class="tutorial-desc">预训练模型，Tokenizer，Trainer</div>
           </div>
         </a>
         <a href="/x-ai-web/peft/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #a855f7, #9333ea); color: white;">PEFT</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">PEFT</div>
+            <div class="tutorial-title">PEFT教程</div>
             <div class="tutorial-desc">LoRA，QLoRA 参数高效微调</div>
           </div>
         </a>
         <a href="/x-ai-web/deepspeed/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #0078d4, #005a9e); color: white;">DS</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">DeepSpeed</div>
+            <div class="tutorial-title">DeepSpeed教程</div>
             <div class="tutorial-desc">ZeRO 优化，3D 并行</div>
           </div>
         </a>
         <a href="/x-ai-web/unsloth/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: white;">US</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Unsloth</div>
-            <div class="tutorial-desc">2024 最快微调，显存优化</div>
+            <div class="tutorial-title">Unsloth教程</div>
+            <div class="tutorial-desc">2026 最快微调，显存优化</div>
           </div>
         </a>
       </div>
@@ -408,35 +462,35 @@ layout: home
     <div class="category-layout">
       <div class="category-intro">
         <img src="./images/vllm.webp" alt="大模型推理部署层" class="category-intro-image">
-        <h3 class="category-intro-title">大模型推理部署层</h3>
+        <h3 class="category-intro-title">大模型推理教程</h3>
         <p class="category-intro-desc">掌握大模型推理优化和部署技术，包括 vLLM 高吞吐服务、TensorRT-LLM 量化、Ollama 一键部署和 TensorRT 模型优化。</p>
       </div>
       <div class="tutorials-list">
         <a href="/x-ai-web/vllm/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">vLLM</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">vLLM</div>
+            <div class="tutorial-title">vLLM教程</div>
             <div class="tutorial-desc">PagedAttention，高吞吐服务</div>
           </div>
         </a>
         <a href="/x-ai-web/tensorrt-llm/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00); color: white;">TRT</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">TensorRT-LLM</div>
+            <div class="tutorial-title">TensorRT-LLM教程</div>
             <div class="tutorial-desc">NVIDIA LLM 优化，量化</div>
           </div>
         </a>
         <a href="/x-ai-web/ollama/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;">Ollama</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Ollama</div>
+            <div class="tutorial-title">Ollama教程</div>
             <div class="tutorial-desc">一键本地 LLM，REST API</div>
           </div>
         </a>
         <a href="/x-ai-web/tensorrt/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00); color: white;">TRT</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">TensorRT</div>
+            <div class="tutorial-title">TensorRT教程</div>
             <div class="tutorial-desc">模型优化部署，ONNX 导入</div>
           </div>
         </a>
@@ -447,143 +501,30 @@ layout: home
   <div class="category-section">
     <div class="category-layout">
       <div class="category-intro">
-        <img src="./images/langchain.png" alt="LLM 应用开发层" class="category-intro-image">
-        <h3 class="category-intro-title">LLM 应用开发层</h3>
+        <img src="./images/langchain.png" alt="LLM 应用开发教程" class="category-intro-image">
+        <h3 class="category-intro-title">LLM 应用开发教程</h3>
         <p class="category-intro-desc">学习大模型应用开发框架，包括 LangChain 链式调用、LlamaIndex RAG 检索和 LangGraph 多 Agent 协作。</p>
       </div>
       <div class="tutorials-list">
         <a href="/x-ai-web/langchain/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #1c3c3c, #0d1f1f); color: #00b4d8;">🦜</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">LangChain</div>
+            <div class="tutorial-title">LangChain教程</div>
             <div class="tutorial-desc">Chain 链，Agent 智能体，Memory</div>
           </div>
         </a>
         <a href="/x-ai-web/llamaindex/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;">LI</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">LlamaIndex</div>
+            <div class="tutorial-title">LlamaIndex教程</div>
             <div class="tutorial-desc">RAG 框架，索引与检索</div>
           </div>
         </a>
         <a href="/x-ai-web/langgraph/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #10b981, #059669); color: white;">LG</div>
           <div class="tutorial-content">
-            <div class="tutorial-title">LangGraph</div>
+            <div class="tutorial-title">LangGraph教程</div>
             <div class="tutorial-desc">状态机工作流，多 Agent 协作</div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="category-section">
-    <div class="category-layout">
-      <div class="category-intro">
-        <img src="./images/chroma.png" alt="向量数据库层" class="category-intro-image">
-        <h3 class="category-intro-title">向量数据库层</h3>
-        <p class="category-intro-desc">掌握向量数据库技术，包括 Chroma 轻量 RAG、Milvus 云原生向量库和 Faiss 高效检索。</p>
-      </div>
-      <div class="tutorials-list">
-        <a href="/x-ai-web/chroma/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #ec4899, #db2777); color: white;">Ch</div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">Chroma</div>
-            <div class="tutorial-desc">嵌入式向量库，轻量 RAG</div>
-          </div>
-        </a>
-        <a href="/x-ai-web/milvus/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">Mv</div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">Milvus</div>
-            <div class="tutorial-desc">云原生向量数据库，十亿级规模</div>
-          </div>
-        </a>
-        <a href="/x-ai-web/faiss/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2); color: white;">Fs</div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">Faiss</div>
-            <div class="tutorial-desc">Meta 向量检索库，PQ/HNSW</div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="category-section">
-    <div class="category-layout">
-      <div class="category-intro">
-        <img src="./images/mlflow.png" alt="MLOps 与模型工程层" class="category-intro-image">
-        <h3 class="category-intro-title">MLOps 与模型工程层</h3>
-        <p class="category-intro-desc">学习 MLOps 和模型工程技术，包括 MLflow 实验跟踪、W&B 可视化、Airflow 任务调度和 Triton 模型服务。</p>
-      </div>
-      <div class="tutorials-list">
-        <a href="/x-ai-web/mlflow/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">MF</div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">MLflow</div>
-            <div class="tutorial-desc">实验跟踪，模型注册</div>
-          </div>
-        </a>
-        <a href="/x-ai-web/wandb/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #333;">WB</div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">Weights & Biases</div>
-            <div class="tutorial-desc">可视化实验，超参搜索</div>
-          </div>
-        </a>
-        <a href="/x-ai-web/airflow/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">AF</div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">Airflow</div>
-            <div class="tutorial-desc">DAG 编排，任务调度</div>
-          </div>
-        </a>
-        <a href="/x-ai-web/triton/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00); color: white;">TS</div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">Triton Server</div>
-            <div class="tutorial-desc">模型服务，动态批处理</div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="category-section">
-    <div class="category-layout">
-      <div class="category-intro">
-        <img src="./images/oc.svg" alt="AI 编程工具" class="category-intro-image">
-        <h3 class="category-intro-title">AI 编程工具</h3>
-        <p class="category-intro-desc">使用 AI 原生编程工具提升开发效率，包括 OpenClaw、Claude Code、Cursor 和 Trae 等智能代码助手。</p>
-      </div>
-      <div class="tutorials-list">
-        <a href="/x-ai-web/openclaw/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;"><img src="./images/oc.svg" alt="OpenClaw" style="width: 24px; height: 24px; object-fit: contain;"></div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">OpenClaw</div>
-            <div class="tutorial-desc">AI 原生 IDE，智能代码补全</div>
-          </div>
-        </a>
-        <a href="/x-ai-web/claude-code/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #d97706, #b45309); color: white;"><img src="./images/code.png" alt="Claude Code" style="width: 24px; height: 24px; object-fit: contain;"></div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">Claude Code</div>
-            <div class="tutorial-desc">Anthropic 编程助手，长上下文</div>
-          </div>
-        </a>
-        <a href="/x-ai-web/cursor/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;"><img src="./images/cursor.png" alt="Cursor" style="width: 24px; height: 24px; object-fit: contain;"></div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">Cursor</div>
-            <div class="tutorial-desc">AI 代码编辑器，GPT-4 驱动</div>
-          </div>
-        </a>
-        <a href="/x-ai-web/trae/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #10b981, #059669); color: white;"><img src="./images/trae.png" alt="Trae" style="width: 24px; height: 24px; object-fit: contain;"></div>
-          <div class="tutorial-content">
-            <div class="tutorial-title">Trae</div>
-            <div class="tutorial-desc">AI 原生 IDE，智能代码生成</div>
           </div>
         </a>
       </div>

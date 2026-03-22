@@ -22,7 +22,16 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '编程语言基础',
+        text: 'AI编程',
+        items: [
+          { text: 'OpenClaw', link: '/openclaw/' },
+          { text: 'Claude Code', link: '/claude-code/' },
+          { text: 'Cursor', link: '/cursor/' },
+          { text: 'Trae', link: '/trae/' }
+        ]
+      },
+      {
+        text: 'Python',
         items: [
           { text: 'Python', link: '/python/' },
           { text: 'NumPy', link: '/numpy/' },
@@ -31,7 +40,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'C++开发',
+        text: 'C++',
         items: [
           { text: 'C++基础', link: '/cpp/' },
           { text: '现代C++', link: '/modern-cpp/' },
@@ -40,83 +49,18 @@ export default defineConfig({
         ]
       },
       {
-        text: 'CUDA GPU编程',
+        text: 'AI数据库',
         items: [
-          { text: 'CUDA基础', link: '/cuda/' },
-          { text: 'CUDA内存', link: '/cuda-memory/' },
-          { text: 'cuBLAS', link: '/cublas/' },
-          { text: 'cuDNN', link: '/cudnn/' },
-          { text: 'NCCL', link: '/nccl/' }
-        ]
-      },
-      {
-        text: '传统机器学习',
-        items: [
-          { text: 'Scikit-learn', link: '/sklearn/' },
-          { text: 'XGBoost', link: '/xgboost/' },
-          { text: 'LightGBM', link: '/lightgbm/' }
-        ]
-      },
-      {
-        text: '深度学习框架',
-        items: [
-          { text: 'PyTorch', link: '/pytorch/' },
-          { text: 'TensorFlow/Keras', link: '/tensorflow/' },
-          { text: 'PyTorch Lightning', link: '/pytorch-lightning/' }
-        ]
-      },
-      {
-        text: '大模型训练微调',
-        items: [
-          { text: 'Transformers', link: '/transformers/' },
-          { text: 'PEFT', link: '/peft/' },
-          { text: 'DeepSpeed', link: '/deepspeed/' },
-          { text: 'Unsloth', link: '/unsloth/' }
-        ]
-      },
-      {
-        text: '大模型推理部署',
-        items: [
-          { text: 'vLLM', link: '/vllm/' },
-          { text: 'TensorRT-LLM', link: '/tensorrt-llm/' },
-          { text: 'Ollama', link: '/ollama/' },
-          { text: 'TensorRT', link: '/tensorrt/' }
-        ]
-      },
-      {
-        text: 'LLM应用开发',
-        items: [
-          { text: 'LangChain', link: '/langchain/' },
-          { text: 'LlamaIndex', link: '/llamaindex/' },
-          { text: 'LangGraph', link: '/langgraph/' }
-        ]
-      },
-      {
-        text: '向量数据库',
-        items: [
-          { text: 'Chroma', link: '/chroma/' },
+          { text: 'PG Vector', link: '/pgvector/' },
+          { text: 'DuckDB', link: '/duckdb/' },
+          { text: 'LanceDB', link: '/lancedb/' },
           { text: 'Milvus', link: '/milvus/' },
-          { text: 'Faiss', link: '/faiss/' }
+          { text: 'Faiss', link: '/faiss/' },
+          { text: 'Chroma', link: '/chroma/' }
         ]
       },
-      {
-        text: 'MLOps',
-        items: [
-          { text: 'MLflow', link: '/mlflow/' },
-          { text: 'W&B', link: '/wandb/' },
-          { text: 'Airflow', link: '/airflow/' },
-          { text: 'Triton Server', link: '/triton/' }
-        ]
-      },
-      {
-        text: 'AI编程',
-        items: [
-          { text: 'OpenClaw', link: '/openclaw/' },
-          { text: 'Claude Code', link: '/claude-code/' },
-          { text: 'Cursor', link: '/cursor/' },
-          { text: 'Trae', link: '/trae/' }
-        ]
-      }
+      { text: '关于', link: '/about/' },
+      { text: '博客', link: '/blog/' }
     ],
 
     footer: {
@@ -127,7 +71,7 @@ export default defineConfig({
     sidebar: {
       '/python/': [
         {
-          text: 'Python教程',
+          text: 'Python',
           collapsed: false,
           items: [
             { text: '概述', link: '/python/' },

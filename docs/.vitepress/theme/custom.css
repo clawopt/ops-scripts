@@ -243,12 +243,76 @@ body {
 .vp-doc div[class*='language-'] {
   border-radius: 12px !important;
   border: 1px solid var(--border) !important;
-  background: #0f172a !important;
+  background: #f8fafc !important;
   box-shadow: var(--shadow) !important;
 }
 
 .vp-doc pre {
   border-radius: 12px !important;
+  background: #f8fafc !important;
+}
+
+.vp-doc code {
+  color: #1e293b !important;
+}
+
+.vp-doc div[class*='language-'] code {
+  color: #1e293b !important;
+}
+
+.vp-doc [class*='language-'] .token.comment,
+.vp-doc [class*='language-'] .token.prolog,
+.vp-doc [class*='language-'] .token.doctype,
+.vp-doc [class*='language-'] .token.cdata {
+  color: #64748b !important;
+}
+
+.vp-doc [class*='language-'] .token.punctuation {
+  color: #475569 !important;
+}
+
+.vp-doc [class*='language-'] .token.property,
+.vp-doc [class*='language-'] .token.tag,
+.vp-doc [class*='language-'] .token.boolean,
+.vp-doc [class*='language-'] .token.number,
+.vp-doc [class*='language-'] .token.constant,
+.vp-doc [class*='language-'] .token.symbol,
+.vp-doc [class*='language-'] .token.deleted {
+  color: #dc2626 !important;
+}
+
+.vp-doc [class*='language-'] .token.selector,
+.vp-doc [class*='language-'] .token.attr-name,
+.vp-doc [class*='language-'] .token.string,
+.vp-doc [class*='language-'] .token.char,
+.vp-doc [class*='language-'] .token.builtin,
+.vp-doc [class*='language-'] .token.inserted {
+  color: #16a34a !important;
+}
+
+.vp-doc [class*='language-'] .token.operator,
+.vp-doc [class*='language-'] .token.entity,
+.vp-doc [class*='language-'] .token.url,
+.vp-doc [class*='language-'] .language-css .token.string,
+.vp-doc [class*='language-'] .style .token.string {
+  color: #0ea5e9 !important;
+}
+
+.vp-doc [class*='language-'] .token.atrule,
+.vp-doc [class*='language-'] .token.attr-value,
+.vp-doc [class*='language-'] .token.keyword {
+  color: #7c3aed !important;
+}
+
+.vp-doc [class*='language-'] .token.function,
+.vp-doc [class*='language-'] .token.class-name {
+  color: #0284c7 !important;
+}
+
+.vp-doc [class*='language-'] .token.regex,
+.vp-doc [class*='language-'] .token.important,
+.vp-doc [class*='language-'] .token.variable {
+  color: #f59e0b !important;
 }
 
 /* 统计卡片 */
@@ -569,4 +633,40 @@ body {
   .category-intro-image {
     height: 100px !important;
   }
+}
+
+/* 移动端导航栏展开菜单显示 */
+.VPNavScreen {
+  background: var(--bg-main) !important;
+  border-bottom: 1px solid var(--border) !important;
+  overflow-y: auto !important;
+}
+
+.VPNavScreen .container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  padding: 24px 0 !important;
+}
+
+.VPNavScreen .VPNavScreenMenu.menu {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.VPNavScreen .VPNavScreenMenuLink {
+  padding: 8px 0 !important;
+  display: block !important;
+}
+
+.VPNavScreen .VPNavScreenMenuGroup {
+  display: block !important;
+}
+
+.VPNavScreen .VPNavScreenMenuGroup .items {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+  padding-left: 16px !important;
 }

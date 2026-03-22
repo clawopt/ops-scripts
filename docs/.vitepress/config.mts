@@ -125,6 +125,7 @@ export default defineConfig({
           items: [
             { text: '概述', link: '/python/' },
             { text: '基础语法', link: '/python/syntax' },
+            { text: '控制流与函数', link: '/python/control-flow' },
             { text: '数据结构', link: '/python/data-structures' },
             { text: '面向对象', link: '/python/oop' },
             { text: '标准库', link: '/python/stdlib' }
@@ -610,6 +611,9 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '概述', link: '/claude-code/' },
+            { text: 'Claude Code 简介', link: '/claude-code/introduction' },
+            { text: '安装指南', link: '/claude-code/installation' },
+            { text: '下载与开始', link: '/claude-code/start' },
             { text: '代码分析', link: '/claude-code/analysis' },
             { text: '智能重构', link: '/claude-code/refactor' }
           ]

@@ -527,3 +527,83 @@ body {
     padding: 0 20px !important;
   }
 }
+
+/* 左侧栏描述文字完整显示 */
+.VPSidebarItem .text {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.VPSidebarItem .link {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.VPSidebarItem .title {
+  flex-shrink: 0 !important;
+  max-width: none !important;
+}
+
+.VPSidebar .group {
+  padding-bottom: 8px !important;
+}
+
+.VPSidebar .item {
+  padding: 4px 0 !important;
+}
+
+/* 屏幕变小时左右列表自动排版成一列 */
+@media (max-width: 1200px) {
+  .category-layout {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  
+  .category-intro {
+    max-width: 100% !important;
+    position: static !important;
+  }
+  
+  .category-intro-image {
+    height: 100px !important;
+  }
+}
+
+/* 移动端导航栏菜单显示 */
+@media (max-width: 768px) {
+  .VPNavBar .hamburger {
+    display: flex !important;
+  }
+  
+  .VPNavBar .nav-bar-content-right {
+    display: flex !important;
+  }
+  
+  .VPNavScreen {
+    display: block !important;
+  }
+  
+  .VPNavScreen .nav-screen-content {
+    display: block !important;
+  }
+  
+  /* 确保移动端导航菜单可以展开 */
+  .VPNavBar .title + .content {
+    display: none !important;
+  }
+  
+  .VPNavBar.hamburger-open .title + .content {
+    display: flex !important;
+    flex-direction: column !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: var(--bg-main) !important;
+    border-bottom: 1px solid var(--border) !important;
+    padding: 16px !important;
+    z-index: 99 !important;
+  }
+}

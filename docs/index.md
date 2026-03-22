@@ -150,7 +150,7 @@ layout: home
       <div class="category-intro">
         <img src="./images/oc.svg" alt="AI 编程教程" class="category-intro-image">
         <h3 class="category-intro-title">AI 编程教程</h3>
-        <p class="category-intro-desc">使用 AI 原生编程工具提升开发效率，包括 OpenClaw、Claude Code、Cursor 和 Trae 等智能代码助手。</p>
+        <p class="category-intro-desc">使用 AI 原生编程工具提升开发效率，包括 OpenClaw、ClaudeCode、Cursor 和 Trae 等智能代码助手。</p>
       </div>
       <div class="tutorials-list">
         <a href="/x-ai-web/openclaw/" class="tutorial-item">
@@ -161,9 +161,9 @@ layout: home
           </div>
         </a>
         <a href="/x-ai-web/claude-code/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #d97706, #b45309); color: white;"><img src="./images/code.png" alt="Claude Code" style="width: 100%; height: 100%; object-fit: contain;"></div>
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #d97706, #b45309); color: white;"><img src="./images/code.png" alt="ClaudeCode" style="width: 100%; height: 100%; object-fit: contain;"></div>
           <div class="tutorial-content">
-            <div class="tutorial-title">Claude Code教程</div>
+            <div class="tutorial-title">ClaudeCode教程</div>
             <div class="tutorial-desc">Anthropic 编程助手，长上下文</div>
           </div>
         </a>
@@ -236,7 +236,7 @@ layout: home
         <a href="/x-ai-web/cpp/" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #00599c, #004482); color: white;"><span class="iconify" data-icon="logos:c-plusplus"></span></div>
           <div class="tutorial-content">
-            <div class="tutorial-title">C++ 基础</div>
+            <div class="tutorial-title">C++ 基础教程</div>
             <div class="tutorial-desc">语法基础，指针引用，面向对象</div>
           </div>
         </a>
@@ -295,7 +295,7 @@ layout: home
           </div>
         </a>
         <a href="/x-ai-web/milvus/" class="tutorial-item">
-          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;"><span class="iconify" data-icon="mdi:database-network-outline"></span></div>
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;"><span class="iconify" data-icon="mdi:vector-link"></span></div>
           <div class="tutorial-content">
             <div class="tutorial-title">Milvus 教程</div>
             <div class="tutorial-desc">云原生 AI 数据库，十亿级规模</div>

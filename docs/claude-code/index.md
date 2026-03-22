@@ -1,12 +1,12 @@
 ---
-title: Claude Code教程
+title: ClaudeCode教程
 ---
 
-# Claude Code教程
+# ClaudeCode教程
 
-Claude Code是Anthropic官方编程助手，长上下文，代码理解力强。
+ClaudeCode是Anthropic官方编程助手，长上下文，代码理解力强。
 
-## 为什么学习Claude Code？
+## 为什么学习ClaudeCode？
 
 - **长上下文**：支持超长代码分析
 - **代码理解**：深度理解代码逻辑

@@ -24,7 +24,7 @@ export default defineConfig({
         text: 'AI 编程',
         items: [
           { text: 'OpenClaw', link: '/openclaw/' },
-          { text: 'Claude Code', link: '/claude-code/' },
+          { text: 'ClaudeCode', link: '/claude-code/' },
           { text: 'Cursor', link: '/cursor/' },
           { text: 'Trae', link: '/trae/' }
         ]
@@ -41,10 +41,10 @@ export default defineConfig({
       {
         text: 'C++',
         items: [
-          { text: 'C++基础', link: '/cpp/' },
-          { text: '现代C++', link: '/modern-cpp/' },
+          { text: 'C++', link: '/cpp/' },
+          { text: 'Modern C++', link: '/modern-cpp/' },
           { text: 'CMake', link: '/cmake/' },
-          { text: 'GDB调试', link: '/gdb/' }
+          { text: 'GDB', link: '/gdb/' }
         ]
       },
       {
@@ -168,7 +168,7 @@ export default defineConfig({
       ],
       '/cpp/': [
         {
-          text: 'C++基础教程',
+          text: 'C++ 基础教程',
           collapsed: false,
           items: [
             { text: '概述', link: '/cpp/' },
@@ -606,7 +606,7 @@ export default defineConfig({
       ],
       '/claude-code/': [
         {
-          text: 'Claude Code教程',
+          text: 'ClaudeCode教程',
           collapsed: false,
           items: [
             { text: '概述', link: '/claude-code/' },

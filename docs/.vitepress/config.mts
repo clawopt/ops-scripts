@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/x-ai-web/',
   appearance: false,
   head: [
-    ['link', { rel: 'icon', href: '/x-ai-web/images/favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: './images/favicon.svg', type: 'image/svg+xml' }],
     ['meta', { name: 'keywords', content: 'AI编程,深度学习,CUDA,PyTorch,大模型,LLM,机器学习' }],
     ['meta', { name: 'author', content: 'AI编程技术栈' }],
     ['script', { src: 'https://cdn.tailwindcss.com' }],
@@ -106,6 +106,15 @@ export default defineConfig({
           { text: 'W&B', link: '/wandb/' },
           { text: 'Airflow', link: '/airflow/' },
           { text: 'Triton Server', link: '/triton/' }
+        ]
+      },
+      {
+        text: 'AI编程',
+        items: [
+          { text: 'OpenClaw', link: '/openclaw/' },
+          { text: 'Claude Code', link: '/claude-code/' },
+          { text: 'Cursor', link: '/cursor/' },
+          { text: 'Trae', link: '/trae/' }
         ]
       }
     ],
@@ -588,6 +597,50 @@ export default defineConfig({
             { text: '概述', link: '/triton/' },
             { text: '模型服务', link: '/triton/server' },
             { text: '动态批处理', link: '/triton/batching' }
+          ]
+        }
+      ],
+      '/openclaw/': [
+        {
+          text: 'OpenClaw教程',
+          collapsed: false,
+          items: [
+            { text: '概述', link: '/openclaw/' },
+            { text: 'AI代码生成', link: '/openclaw/codegen' },
+            { text: '智能补全', link: '/openclaw/autocomplete' }
+          ]
+        }
+      ],
+      '/claude-code/': [
+        {
+          text: 'Claude Code教程',
+          collapsed: false,
+          items: [
+            { text: '概述', link: '/claude-code/' },
+            { text: '代码分析', link: '/claude-code/analysis' },
+            { text: '智能重构', link: '/claude-code/refactor' }
+          ]
+        }
+      ],
+      '/cursor/': [
+        {
+          text: 'Cursor教程',
+          collapsed: false,
+          items: [
+            { text: '概述', link: '/cursor/' },
+            { text: '代码生成', link: '/cursor/codegen' },
+            { text: '智能重构', link: '/cursor/refactor' }
+          ]
+        }
+      ],
+      '/trae/': [
+        {
+          text: 'Trae教程',
+          collapsed: false,
+          items: [
+            { text: '概述', link: '/trae/' },
+            { text: 'AI代码生成', link: '/trae/codegen' },
+            { text: '智能补全', link: '/trae/autocomplete' }
           ]
         }
       ],

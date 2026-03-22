@@ -6,42 +6,16 @@ layout: home
 .home-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-}
-
-.search-box {
-  margin-bottom: 16px;
-}
-
-.search-input {
-  width: 100%;
-  padding: 8px 12px;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  font-size: 0.875rem;
-  background: #fff;
-  outline: none;
-  transition: all 0.2s ease;
-  font-family: inherit;
-}
-
-.search-input:focus {
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 0 0 0 1px var(--vp-c-brand-1);
-}
-
-.search-input::placeholder {
-  color: #94a3b8;
+  padding: 10px;
 }
 
 .category-section {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .category-header {
-  margin-bottom: 5px;
+  margin-bottom: 2.5px;
   padding-bottom: 3px;
-  border-bottom: 1px solid #e2e8f0;
 }
 
 .category-title {
@@ -55,7 +29,7 @@ layout: home
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .tech-card {
@@ -110,10 +84,6 @@ layout: home
 </style>
 
 <div class="home-container">
-
-  <div class="search-box">
-    <input type="text" placeholder="搜索技术教程..." class="search-input">
-  </div>
 
   <div class="category-section">
     <div class="category-header">
@@ -524,6 +494,50 @@ layout: home
           <span class="tech-name">Triton Server</span>
         </div>
         <p class="tech-desc">模型服务，动态批处理</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <div class="category-header">
+      <h2 class="category-title">AI编程工具</h2>
+    </div>
+    <div class="tech-grid">
+      <a href="/x-ai-web/openclaw/" class="tech-card">
+        <div class="tech-card-header">
+          <div class="tech-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
+            <img src="./images/oc.svg" alt="OpenClaw" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <span class="tech-name">OpenClaw</span>
+        </div>
+        <p class="tech-desc">AI原生IDE，智能代码补全</p>
+      </a>
+      <a href="/x-ai-web/claude-code/" class="tech-card">
+        <div class="tech-card-header">
+          <div class="tech-icon" style="background: linear-gradient(135deg, #d97706, #b45309);">
+            <img src="./images/code.png" alt="Claude Code" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <span class="tech-name">Claude Code</span>
+        </div>
+        <p class="tech-desc">Anthropic编程助手，长上下文</p>
+      </a>
+      <a href="/x-ai-web/cursor/" class="tech-card">
+        <div class="tech-card-header">
+          <div class="tech-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
+            <img src="./images/cursor.png" alt="Cursor" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <span class="tech-name">Cursor</span>
+        </div>
+        <p class="tech-desc">AI代码编辑器，GPT-4驱动</p>
+      </a>
+      <a href="/x-ai-web/trae/" class="tech-card">
+        <div class="tech-card-header">
+          <div class="tech-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
+            <img src="./images/trae.png" alt="Trae" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <span class="tech-name">Trae</span>
+        </div>
+        <p class="tech-desc">AI原生IDE，智能代码生成</p>
       </a>
     </div>
   </div>

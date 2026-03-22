@@ -1,5 +1,22 @@
 /* 现代化科技感主题 */
 
+/* 首页卡片样式 - 移除下划线 */
+.tech-card,
+.tech-card * {
+  text-decoration: none !important;
+}
+
+.tech-card:hover,
+.tech-card:hover * {
+  text-decoration: none !important;
+}
+
+/* 移除首页h2标题的分割线 */
+.vp-doc h2 {
+  border-top: none !important;
+  padding-top: 0 !important;
+}
+
 /* 浅色模式 */
 :root {
   --primary: #06b6d4;

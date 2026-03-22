@@ -129,7 +129,7 @@ body {
 
 /* 标题 */
 .VPHomeHero {
-  padding: 80px 0 !important;
+  padding: 40px 0 !important;
   background: radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 70%) !important;
 }
 
@@ -140,7 +140,7 @@ body {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   letter-spacing: -0.02em;
-  margin-bottom: 20px !important;
+  margin-bottom: 10px !important;
   text-shadow: 0 0 30px rgba(6, 182, 212, 0.3);
 }
 
@@ -148,14 +148,14 @@ body {
   font-size: 2rem !important;
   font-weight: 700 !important;
   color: var(--text-primary) !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 8px !important;
 }
 
 .VPHomeHero .tagline {
   font-size: 1.25rem !important;
   color: var(--text-secondary) !important;
   max-width: 600px;
-  margin-bottom: 40px !important;
+  margin-bottom: 20px !important;
 }
 
 /* 按钮样式 */
@@ -253,7 +253,7 @@ body {
 
 /* 统计卡片 */
 .hero-stats {
-  margin: 80px auto !important;
+  margin: 40px auto !important;
   max-width: 900px !important;
   text-align: center;
 }
@@ -261,7 +261,7 @@ body {
 .hero-stats h2 {
   font-size: 1.75rem !important;
   color: var(--text-primary) !important;
-  margin-bottom: 32px !important;
+  margin-bottom: 16px !important;
   font-weight: 700 !important;
 }
 
@@ -409,7 +409,7 @@ body {
 /* 调整文档内容容器 */
 .VPDoc .content-container {
   max-width: 100% !important;
-  padding: 0 0 40px !important;
+  padding: 0 !important;
 }
 
 /* 隐藏右侧目录栏 */
@@ -495,6 +495,22 @@ body {
 
 .VPHome .vp-doc {
   padding: 0 !important;
+}
+
+/* 分类标题顶部空白移除 */
+.category-header {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.category-title {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.category-section:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 /* 响应式调整 */

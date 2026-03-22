@@ -4,541 +4,589 @@ layout: home
 
 <style>
 .home-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 }
 
+/* 分类区域布局 */
 .category-section {
-  margin-bottom: 4px;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards;
 }
 
-.category-header {
-  margin-bottom: 2.5px;
-  padding-bottom: 3px;
+.category-section:nth-child(1) { animation-delay: 0.1s; }
+.category-section:nth-child(2) { animation-delay: 0.2s; }
+.category-section:nth-child(3) { animation-delay: 0.3s; }
+.category-section:nth-child(4) { animation-delay: 0.4s; }
+.category-section:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.category-title {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin: 0;
-}
-
-.tech-grid {
+.category-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px;
-  margin-bottom: 12px;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: stretch;
 }
 
-.tech-card {
+/* 左侧分类介绍 */
+.category-intro {
   background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px;
   border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: 12px;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  display: block;
-}
-
-.tech-card:hover {
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-color: #06b6d4;
-}
-
-.tech-card-header {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: start;
+  max-height: fit-content;
 }
 
-.tech-icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.85rem;
+.category-intro-image {
+  width: 100%;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 12px;
   flex-shrink: 0;
 }
 
-.tech-name {
-  font-size: 0.9rem;
-  font-weight: 600;
+.category-intro-title {
+  font-size: 1rem;
+  font-weight: 700;
   color: #1e293b;
+  margin-bottom: 8px;
+  flex-shrink: 0;
 }
 
-.tech-desc {
-  font-size: 0.75rem;
+.category-intro-desc {
+  font-size: 0.8rem;
   color: #64748b;
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* 右侧教程列表 */
+.tutorials-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.tutorial-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  background: #f8fafc;
+}
+
+.tutorial-item:hover {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+}
+
+.tutorial-item,
+.tutorial-item * {
+  text-decoration: none !important;
+}
+
+.tutorial-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.tutorial-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+}
+
+.tutorial-content {
+  flex: 1;
+}
+
+.tutorial-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.tutorial-desc {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.5;
 }
 </style>
 
 <div class="home-container">
 
   <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">编程语言基础层</h2>
-    </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/python/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
-            <span style="color: white;">Py</span>
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/oc.svg" alt="AI 编程工具" class="category-intro-image">
+        <h3 class="category-intro-title">AI 编程工具</h3>
+        <p class="category-intro-desc">使用 AI 原生编程工具提升开发效率，包括 OpenClaw、Claude Code、Cursor 和 Trae 等智能代码助手。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/openclaw/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;"><img src="./images/oc.svg" alt="OpenClaw" style="width: 100%; height: 100%; object-fit: contain;"></div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">OpenClaw</div>
+            <div class="tutorial-desc">AI 原生 IDE，智能代码补全</div>
           </div>
-          <span class="tech-name">Python</span>
-        </div>
-        <p class="tech-desc">AI生态核心语言，语法简洁，标准库丰富</p>
-      </a>
-      <a href="/x-ai-web/numpy/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #4f46e5, #3730a3);">
-            <span style="color: white;">Np</span>
+        </a>
+        <a href="/x-ai-web/claude-code/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #d97706, #b45309); color: white;"><img src="./images/code.png" alt="Claude Code" style="width: 100%; height: 100%; object-fit: contain;"></div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Claude Code</div>
+            <div class="tutorial-desc">Anthropic 编程助手，长上下文</div>
           </div>
-          <span class="tech-name">NumPy</span>
-        </div>
-        <p class="tech-desc">数值计算基石，ndarray数组，向量化运算</p>
-      </a>
-      <a href="/x-ai-web/pandas/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
-            <span style="color: white;">Pd</span>
+        </a>
+        <a href="/x-ai-web/cursor/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;"><img src="./images/cursor.png" alt="Cursor" style="width: 100%; height: 100%; object-fit: contain;"></div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Cursor</div>
+            <div class="tutorial-desc">AI 代码编辑器，GPT-4 驱动</div>
           </div>
-          <span class="tech-name">Pandas</span>
-        </div>
-        <p class="tech-desc">表格数据处理，DataFrame操作</p>
-      </a>
-      <a href="/x-ai-web/matplotlib/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">
-            <span style="color: white;">Mp</span>
+        </a>
+        <a href="/x-ai-web/trae/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #10b981, #059669); color: white;"><img src="./images/trae.png" alt="Trae" style="width: 100%; height: 100%; object-fit: contain;"></div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Trae</div>
+            <div class="tutorial-desc">AI 原生 IDE，智能代码生成</div>
           </div>
-          <span class="tech-name">Matplotlib</span>
-        </div>
-        <p class="tech-desc">静态可视化基础，出版级图表</p>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 
   <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">C++开发层</h2>
-    </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/cpp/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #00599c, #004482);">
-            <span style="color: white;">C++</span>
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/python.png" alt="编程语言基础层" class="category-intro-image">
+        <h3 class="category-intro-title">编程语言基础层</h3>
+        <p class="category-intro-desc">掌握 AI 开发必备的编程语言和核心库，包括 Python 基础、NumPy 数值计算、Pandas 数据处理和 Matplotlib 可视化。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/python/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white;">Py</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Python</div>
+            <div class="tutorial-desc">AI 生态核心语言，语法简洁，标准库丰富</div>
           </div>
-          <span class="tech-name">C++基础</span>
-        </div>
-        <p class="tech-desc">语法基础，指针引用，面向对象</p>
-      </a>
-      <a href="/x-ai-web/modern-cpp/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
-            <span style="color: white;">C++17</span>
+        </a>
+        <a href="/x-ai-web/numpy/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #4f46e5, #3730a3); color: white;">Np</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">NumPy</div>
+            <div class="tutorial-desc">数值计算基石，ndarray 数组，向量化运算</div>
           </div>
-          <span class="tech-name">现代C++</span>
-        </div>
-        <p class="tech-desc">智能指针，Lambda，移动语义</p>
-      </a>
-      <a href="/x-ai-web/cmake/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
-            <span style="color: white;">CM</span>
+        </a>
+        <a href="/x-ai-web/pandas/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">Pd</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Pandas</div>
+            <div class="tutorial-desc">表格数据处理，DataFrame 操作</div>
           </div>
-          <span class="tech-name">CMake</span>
-        </div>
-        <p class="tech-desc">跨平台构建，target管理</p>
-      </a>
-      <a href="/x-ai-web/gdb/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
-            <span style="color: white;">GDB</span>
+        </a>
+        <a href="/x-ai-web/matplotlib/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); color: white;">Mp</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Matplotlib</div>
+            <div class="tutorial-desc">静态可视化基础，出版级图表</div>
           </div>
-          <span class="tech-name">GDB调试</span>
-        </div>
-        <p class="tech-desc">断点调试，变量查看</p>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 
   <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">CUDA GPU编程层</h2>
-    </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/cuda/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00);">
-            <span style="color: white;">CUDA</span>
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/cpp.svg" alt="C++ 开发层" class="category-intro-image">
+        <h3 class="category-intro-title">C++ 开发层</h3>
+        <p class="category-intro-desc">从 C++ 基础到现代 C++ 特性，掌握 CMake 构建系统和 GDB 调试技能，为高性能计算和系统开发打下坚实基础。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/cpp/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #00599c, #004482); color: white;">C++</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">C++ 基础</div>
+            <div class="tutorial-desc">语法基础，指针引用，面向对象</div>
           </div>
-          <span class="tech-name">CUDA基础</span>
-        </div>
-        <p class="tech-desc">内核函数，线程层次，内存模型</p>
-      </a>
-      <a href="/x-ai-web/cuda-memory/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
-            <span style="color: white;">Mem</span>
+        </a>
+        <a href="/x-ai-web/modern-cpp/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;">C++17</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">现代 C++</div>
+            <div class="tutorial-desc">智能指针，Lambda，移动语义</div>
           </div>
-          <span class="tech-name">CUDA内存优化</span>
-        </div>
-        <p class="tech-desc">全局内存，共享内存，统一内存</p>
-      </a>
-      <a href="/x-ai-web/cublas/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
-            <span style="color: white;">BLAS</span>
+        </a>
+        <a href="/x-ai-web/cmake/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2); color: white;">CM</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">CMake</div>
+            <div class="tutorial-desc">跨平台构建，target 管理</div>
           </div>
-          <span class="tech-name">cuBLAS</span>
-        </div>
-        <p class="tech-desc">GPU矩阵运算，GEMM/GEMV</p>
-      </a>
-      <a href="/x-ai-web/cudnn/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
-            <span style="color: white;">DNN</span>
+        </a>
+        <a href="/x-ai-web/gdb/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626); color: white;">GDB</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">GDB 调试</div>
+            <div class="tutorial-desc">断点调试，变量查看</div>
           </div>
-          <span class="tech-name">cuDNN</span>
-        </div>
-        <p class="tech-desc">深度学习原语，卷积，池化</p>
-      </a>
-      <a href="/x-ai-web/nccl/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #ec4899, #db2777);">
-            <span style="color: white;">NCCL</span>
-          </div>
-          <span class="tech-name">NCCL</span>
-        </div>
-        <p class="tech-desc">多GPU通信，AllReduce</p>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 
   <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">传统机器学习层</h2>
-    </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/sklearn/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #f7931e, #e07f00);">
-            <span style="color: white;">SK</span>
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/cuda.png" alt="CUDA GPU 编程层" class="category-intro-image">
+        <h3 class="category-intro-title">CUDA GPU 编程层</h3>
+        <p class="category-intro-desc">掌握 GPU 并行计算核心技能，学习 CUDA C++、CUDA CMake 构建和 CUDA GDB 调试。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/cuda/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00); color: white;">CUDA</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">CUDA C++</div>
+            <div class="tutorial-desc">GPU 并行计算，内核函数，线程层次</div>
           </div>
-          <span class="tech-name">Scikit-learn</span>
-        </div>
-        <p class="tech-desc">ML算法，预处理，模型选择</p>
-      </a>
-      <a href="/x-ai-web/xgboost/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #00b4d8, #0096c7);">
-            <span style="color: white;">XGB</span>
+        </a>
+        <a href="/x-ai-web/cuda-cmake/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2); color: white;">CM</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">CUDA CMake</div>
+            <div class="tutorial-desc">CUDA 项目构建，target 管理</div>
           </div>
-          <span class="tech-name">XGBoost</span>
-        </div>
-        <p class="tech-desc">梯度提升，回归/分类/排序</p>
-      </a>
-      <a href="/x-ai-web/lightgbm/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #22c55e, #16a34a);">
-            <span style="color: white;">LGB</span>
+        </a>
+        <a href="/x-ai-web/cuda-gdb/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626); color: white;">GDB</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">CUDA GDB</div>
+            <div class="tutorial-desc">GPU 调试工具，断点调试</div>
           </div>
-          <span class="tech-name">LightGBM</span>
-        </div>
-        <p class="tech-desc">微软GBDT，速度快内存省</p>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 
   <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">深度学习框架层</h2>
-    </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/pytorch/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #ee4c2c, #d13b1c);">
-            <span style="color: white;">PT</span>
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/sklearn.svg" alt="传统机器学习层" class="category-intro-image">
+        <h3 class="category-intro-title">传统机器学习层</h3>
+        <p class="category-intro-desc">学习经典机器学习算法和工具，包括 Scikit-learn、XGBoost 和 LightGBM，打好 ML 基础。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/sklearn/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #f7931e, #e07f00); color: white;">SK</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Scikit-learn</div>
+            <div class="tutorial-desc">ML 算法，预处理，模型选择</div>
           </div>
-          <span class="tech-name">PyTorch</span>
-        </div>
-        <p class="tech-desc">动态图，自动微分，nn.Module</p>
-      </a>
-      <a href="/x-ai-web/tensorflow/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #ff6f00, #e65100);">
-            <span style="color: white;">TF</span>
+        </a>
+        <a href="/x-ai-web/xgboost/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #00b4d8, #0096c7); color: white;">XGB</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">XGBoost</div>
+            <div class="tutorial-desc">梯度提升，回归/分类/排序</div>
           </div>
-          <span class="tech-name">TensorFlow/Keras</span>
-        </div>
-        <p class="tech-desc">静态图，生产部署，Keras API</p>
-      </a>
-      <a href="/x-ai-web/pytorch-lightning/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #7c3aed, #6d28d9);">
-            <span style="color: white;">⚡</span>
+        </a>
+        <a href="/x-ai-web/lightgbm/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: white;">LGB</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">LightGBM</div>
+            <div class="tutorial-desc">微软 GBDT，速度快内存省</div>
           </div>
-          <span class="tech-name">PyTorch Lightning</span>
-        </div>
-        <p class="tech-desc">工程化封装，自动分布式</p>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 
   <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">大模型训练与微调层</h2>
-    </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/transformers/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #ffcc00, #f0b400);">
-            <span style="color: #333;">🤗</span>
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/pytorch.png" alt="深度学习框架层" class="category-intro-image">
+        <h3 class="category-intro-title">深度学习框架层</h3>
+        <p class="category-intro-desc">掌握主流深度学习框架，包括 PyTorch 动态图、TensorFlow 生产部署和 PyTorch Lightning 工程化封装。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/pytorch/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #ee4c2c, #d13b1c); color: white;">PT</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">PyTorch</div>
+            <div class="tutorial-desc">动态图，自动微分，nn.Module</div>
           </div>
-          <span class="tech-name">Transformers</span>
-        </div>
-        <p class="tech-desc">预训练模型，Tokenizer，Trainer</p>
-      </a>
-      <a href="/x-ai-web/peft/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #a855f7, #9333ea);">
-            <span style="color: white;">PEFT</span>
+        </a>
+        <a href="/x-ai-web/tensorflow/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #ff6f00, #e65100); color: white;">TF</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">TensorFlow/Keras</div>
+            <div class="tutorial-desc">静态图，生产部署，Keras API</div>
           </div>
-          <span class="tech-name">PEFT</span>
-        </div>
-        <p class="tech-desc">LoRA，QLoRA参数高效微调</p>
-      </a>
-      <a href="/x-ai-web/deepspeed/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #0078d4, #005a9e);">
-            <span style="color: white;">DS</span>
+        </a>
+        <a href="/x-ai-web/pytorch-lightning/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #7c3aed, #6d28d9); color: white;">⚡</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">PyTorch Lightning</div>
+            <div class="tutorial-desc">工程化封装，自动分布式</div>
           </div>
-          <span class="tech-name">DeepSpeed</span>
-        </div>
-        <p class="tech-desc">ZeRO优化，3D并行</p>
-      </a>
-      <a href="/x-ai-web/unsloth/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #22c55e, #16a34a);">
-            <span style="color: white;">US</span>
-          </div>
-          <span class="tech-name">Unsloth</span>
-        </div>
-        <p class="tech-desc">2024最快微调，显存优化</p>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 
   <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">大模型推理部署层</h2>
-    </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/vllm/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
-            <span style="color: white;">vLLM</span>
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/transformers.jpeg" alt="大模型训练与微调层" class="category-intro-image">
+        <h3 class="category-intro-title">大模型训练与微调层</h3>
+        <p class="category-intro-desc">学习大模型训练和微调技术，包括 Transformers 库、PEFT 高效微调、DeepSpeed 分布式训练和 Unsloth 快速微调。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/transformers/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #ffcc00, #f0b400); color: #333;">🤗</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Transformers</div>
+            <div class="tutorial-desc">预训练模型，Tokenizer，Trainer</div>
           </div>
-          <span class="tech-name">vLLM</span>
-        </div>
-        <p class="tech-desc">PagedAttention，高吞吐服务</p>
-      </a>
-      <a href="/x-ai-web/tensorrt-llm/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00);">
-            <span style="color: white;">TRT</span>
+        </a>
+        <a href="/x-ai-web/peft/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #a855f7, #9333ea); color: white;">PEFT</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">PEFT</div>
+            <div class="tutorial-desc">LoRA，QLoRA 参数高效微调</div>
           </div>
-          <span class="tech-name">TensorRT-LLM</span>
-        </div>
-        <p class="tech-desc">NVIDIA LLM优化，量化</p>
-      </a>
-      <a href="/x-ai-web/ollama/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
-            <span style="color: white;">Ollama</span>
+        </a>
+        <a href="/x-ai-web/deepspeed/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0078d4, #005a9e); color: white;">DS</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">DeepSpeed</div>
+            <div class="tutorial-desc">ZeRO 优化，3D 并行</div>
           </div>
-          <span class="tech-name">Ollama</span>
-        </div>
-        <p class="tech-desc">一键本地LLM，REST API</p>
-      </a>
-      <a href="/x-ai-web/tensorrt/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00);">
-            <span style="color: white;">TRT</span>
+        </a>
+        <a href="/x-ai-web/unsloth/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: white;">US</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Unsloth</div>
+            <div class="tutorial-desc">2024 最快微调，显存优化</div>
           </div>
-          <span class="tech-name">TensorRT</span>
-        </div>
-        <p class="tech-desc">模型优化部署，ONNX导入</p>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 
   <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">LLM应用开发层</h2>
-    </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/langchain/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #1c3c3c, #0d1f1f);">
-            <span style="color: #00b4d8;">🦜</span>
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/vllm.webp" alt="大模型推理部署层" class="category-intro-image">
+        <h3 class="category-intro-title">大模型推理部署层</h3>
+        <p class="category-intro-desc">掌握大模型推理优化和部署技术，包括 vLLM 高吞吐服务、TensorRT-LLM 量化、Ollama 一键部署和 TensorRT 模型优化。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/vllm/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">vLLM</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">vLLM</div>
+            <div class="tutorial-desc">PagedAttention，高吞吐服务</div>
           </div>
-          <span class="tech-name">LangChain</span>
-        </div>
-        <p class="tech-desc">Chain链，Agent智能体，Memory</p>
-      </a>
-      <a href="/x-ai-web/llamaindex/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
-            <span style="color: white;">LI</span>
+        </a>
+        <a href="/x-ai-web/tensorrt-llm/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00); color: white;">TRT</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">TensorRT-LLM</div>
+            <div class="tutorial-desc">NVIDIA LLM 优化，量化</div>
           </div>
-          <span class="tech-name">LlamaIndex</span>
-        </div>
-        <p class="tech-desc">RAG框架，索引与检索</p>
-      </a>
-      <a href="/x-ai-web/langgraph/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
-            <span style="color: white;">LG</span>
+        </a>
+        <a href="/x-ai-web/ollama/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;">Ollama</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Ollama</div>
+            <div class="tutorial-desc">一键本地 LLM，REST API</div>
           </div>
-          <span class="tech-name">LangGraph</span>
-        </div>
-        <p class="tech-desc">状态机工作流，多Agent协作</p>
-      </a>
-    </div>
-  </div>
-
-  <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">向量数据库层</h2>
-    </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/chroma/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #ec4899, #db2777);">
-            <span style="color: white;">Ch</span>
+        </a>
+        <a href="/x-ai-web/tensorrt/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00); color: white;">TRT</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">TensorRT</div>
+            <div class="tutorial-desc">模型优化部署，ONNX 导入</div>
           </div>
-          <span class="tech-name">Chroma</span>
-        </div>
-        <p class="tech-desc">嵌入式向量库，轻量RAG</p>
-      </a>
-      <a href="/x-ai-web/milvus/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
-            <span style="color: white;">Mv</span>
-          </div>
-          <span class="tech-name">Milvus</span>
-        </div>
-        <p class="tech-desc">云原生向量数据库，十亿级规模</p>
-      </a>
-      <a href="/x-ai-web/faiss/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
-            <span style="color: white;">Fs</span>
-          </div>
-          <span class="tech-name">Faiss</span>
-        </div>
-        <p class="tech-desc">Meta向量检索库，PQ/HNSW</p>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 
   <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">MLOps与模型工程层</h2>
-    </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/mlflow/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
-            <span style="color: white;">MF</span>
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/langchain.png" alt="LLM 应用开发层" class="category-intro-image">
+        <h3 class="category-intro-title">LLM 应用开发层</h3>
+        <p class="category-intro-desc">学习大模型应用开发框架，包括 LangChain 链式调用、LlamaIndex RAG 检索和 LangGraph 多 Agent 协作。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/langchain/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #1c3c3c, #0d1f1f); color: #00b4d8;">🦜</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">LangChain</div>
+            <div class="tutorial-desc">Chain 链，Agent 智能体，Memory</div>
           </div>
-          <span class="tech-name">MLflow</span>
-        </div>
-        <p class="tech-desc">实验跟踪，模型注册</p>
-      </a>
-      <a href="/x-ai-web/wandb/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
-            <span style="color: #333;">WB</span>
+        </a>
+        <a href="/x-ai-web/llamaindex/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;">LI</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">LlamaIndex</div>
+            <div class="tutorial-desc">RAG 框架，索引与检索</div>
           </div>
-          <span class="tech-name">Weights & Biases</span>
-        </div>
-        <p class="tech-desc">可视化实验，超参搜索</p>
-      </a>
-      <a href="/x-ai-web/airflow/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
-            <span style="color: white;">AF</span>
+        </a>
+        <a href="/x-ai-web/langgraph/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #10b981, #059669); color: white;">LG</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">LangGraph</div>
+            <div class="tutorial-desc">状态机工作流，多 Agent 协作</div>
           </div>
-          <span class="tech-name">Airflow</span>
-        </div>
-        <p class="tech-desc">DAG编排，任务调度</p>
-      </a>
-      <a href="/x-ai-web/triton/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00);">
-            <span style="color: white;">TS</span>
-          </div>
-          <span class="tech-name">Triton Server</span>
-        </div>
-        <p class="tech-desc">模型服务，动态批处理</p>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 
   <div class="category-section">
-    <div class="category-header">
-      <h2 class="category-title">AI编程工具</h2>
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/chroma.png" alt="向量数据库层" class="category-intro-image">
+        <h3 class="category-intro-title">向量数据库层</h3>
+        <p class="category-intro-desc">掌握向量数据库技术，包括 Chroma 轻量 RAG、Milvus 云原生向量库和 Faiss 高效检索。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/chroma/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #ec4899, #db2777); color: white;">Ch</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Chroma</div>
+            <div class="tutorial-desc">嵌入式向量库，轻量 RAG</div>
+          </div>
+        </a>
+        <a href="/x-ai-web/milvus/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">Mv</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Milvus</div>
+            <div class="tutorial-desc">云原生向量数据库，十亿级规模</div>
+          </div>
+        </a>
+        <a href="/x-ai-web/faiss/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2); color: white;">Fs</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Faiss</div>
+            <div class="tutorial-desc">Meta 向量检索库，PQ/HNSW</div>
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="tech-grid">
-      <a href="/x-ai-web/openclaw/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
-            <img src="./images/oc.svg" alt="OpenClaw" style="width: 100%; height: 100%; object-fit: contain;">
+  </div>
+
+  <div class="category-section">
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/mlflow.png" alt="MLOps 与模型工程层" class="category-intro-image">
+        <h3 class="category-intro-title">MLOps 与模型工程层</h3>
+        <p class="category-intro-desc">学习 MLOps 和模型工程技术，包括 MLflow 实验跟踪、W&B 可视化、Airflow 任务调度和 Triton 模型服务。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/mlflow/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">MF</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">MLflow</div>
+            <div class="tutorial-desc">实验跟踪，模型注册</div>
           </div>
-          <span class="tech-name">OpenClaw</span>
-        </div>
-        <p class="tech-desc">AI原生IDE，智能代码补全</p>
-      </a>
-      <a href="/x-ai-web/claude-code/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #d97706, #b45309);">
-            <img src="./images/code.png" alt="Claude Code" style="width: 100%; height: 100%; object-fit: contain;">
+        </a>
+        <a href="/x-ai-web/wandb/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #333;">WB</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Weights & Biases</div>
+            <div class="tutorial-desc">可视化实验，超参搜索</div>
           </div>
-          <span class="tech-name">Claude Code</span>
-        </div>
-        <p class="tech-desc">Anthropic编程助手，长上下文</p>
-      </a>
-      <a href="/x-ai-web/cursor/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
-            <img src="./images/cursor.png" alt="Cursor" style="width: 100%; height: 100%; object-fit: contain;">
+        </a>
+        <a href="/x-ai-web/airflow/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;">AF</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Airflow</div>
+            <div class="tutorial-desc">DAG 编排，任务调度</div>
           </div>
-          <span class="tech-name">Cursor</span>
-        </div>
-        <p class="tech-desc">AI代码编辑器，GPT-4驱动</p>
-      </a>
-      <a href="/x-ai-web/trae/" class="tech-card">
-        <div class="tech-card-header">
-          <div class="tech-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
-            <img src="./images/trae.png" alt="Trae" style="width: 100%; height: 100%; object-fit: contain;">
+        </a>
+        <a href="/x-ai-web/triton/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #76b900, #5a8f00); color: white;">TS</div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Triton Server</div>
+            <div class="tutorial-desc">模型服务，动态批处理</div>
           </div>
-          <span class="tech-name">Trae</span>
-        </div>
-        <p class="tech-desc">AI原生IDE，智能代码生成</p>
-      </a>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <div class="category-layout">
+      <div class="category-intro">
+        <img src="./images/oc.svg" alt="AI 编程工具" class="category-intro-image">
+        <h3 class="category-intro-title">AI 编程工具</h3>
+        <p class="category-intro-desc">使用 AI 原生编程工具提升开发效率，包括 OpenClaw、Claude Code、Cursor 和 Trae 等智能代码助手。</p>
+      </div>
+      <div class="tutorials-list">
+        <a href="/x-ai-web/openclaw/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;"><img src="./images/oc.svg" alt="OpenClaw" style="width: 24px; height: 24px; object-fit: contain;"></div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">OpenClaw</div>
+            <div class="tutorial-desc">AI 原生 IDE，智能代码补全</div>
+          </div>
+        </a>
+        <a href="/x-ai-web/claude-code/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #d97706, #b45309); color: white;"><img src="./images/code.png" alt="Claude Code" style="width: 24px; height: 24px; object-fit: contain;"></div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Claude Code</div>
+            <div class="tutorial-desc">Anthropic 编程助手，长上下文</div>
+          </div>
+        </a>
+        <a href="/x-ai-web/cursor/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white;"><img src="./images/cursor.png" alt="Cursor" style="width: 24px; height: 24px; object-fit: contain;"></div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Cursor</div>
+            <div class="tutorial-desc">AI 代码编辑器，GPT-4 驱动</div>
+          </div>
+        </a>
+        <a href="/x-ai-web/trae/" class="tutorial-item">
+          <div class="tutorial-icon" style="background: linear-gradient(135deg, #10b981, #059669); color: white;"><img src="./images/trae.png" alt="Trae" style="width: 24px; height: 24px; object-fit: contain;"></div>
+          <div class="tutorial-content">
+            <div class="tutorial-title">Trae</div>
+            <div class="tutorial-desc">AI 原生 IDE，智能代码生成</div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 

@@ -9,6 +9,31 @@ layout: home
   padding: 20px;
 }
 
+.search-box {
+  margin-bottom: 16px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background: #fff;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.search-input:focus {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 0 1px var(--vp-c-brand-1);
+}
+
+.search-input::placeholder {
+  color: #94a3b8;
+}
+
 .category-section {
   margin-bottom: 8px;
 }
@@ -85,6 +110,10 @@ layout: home
 </style>
 
 <div class="home-container">
+
+  <div class="search-box">
+    <input type="text" placeholder="搜索技术教程..." class="search-input">
+  </div>
 
   <div class="category-section">
     <div class="category-header">

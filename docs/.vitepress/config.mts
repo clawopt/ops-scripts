@@ -22,7 +22,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '编程基础',
+        text: '编程语言基础',
         items: [
           { text: 'Python', link: '/python/' },
           { text: 'NumPy', link: '/numpy/' },
@@ -40,7 +40,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'CUDA编程',
+        text: 'CUDA GPU编程',
         items: [
           { text: 'CUDA基础', link: '/cuda/' },
           { text: 'CUDA内存', link: '/cuda-memory/' },
@@ -50,20 +50,53 @@ export default defineConfig({
         ]
       },
       {
-        text: '深度学习',
+        text: '传统机器学习',
         items: [
-          { text: 'PyTorch', link: '/pytorch/' },
-          { text: 'TensorFlow', link: '/tensorflow/' },
-          { text: 'Scikit-learn', link: '/sklearn/' }
+          { text: 'Scikit-learn', link: '/sklearn/' },
+          { text: 'XGBoost', link: '/xgboost/' },
+          { text: 'LightGBM', link: '/lightgbm/' }
         ]
       },
       {
-        text: '大模型',
+        text: '深度学习框架',
+        items: [
+          { text: 'PyTorch', link: '/pytorch/' },
+          { text: 'TensorFlow/Keras', link: '/tensorflow/' },
+          { text: 'PyTorch Lightning', link: '/pytorch-lightning/' }
+        ]
+      },
+      {
+        text: '大模型训练微调',
         items: [
           { text: 'Transformers', link: '/transformers/' },
+          { text: 'PEFT', link: '/peft/' },
+          { text: 'DeepSpeed', link: '/deepspeed/' },
+          { text: 'Unsloth', link: '/unsloth/' }
+        ]
+      },
+      {
+        text: '大模型推理部署',
+        items: [
           { text: 'vLLM', link: '/vllm/' },
+          { text: 'TensorRT-LLM', link: '/tensorrt-llm/' },
+          { text: 'Ollama', link: '/ollama/' },
+          { text: 'TensorRT', link: '/tensorrt/' }
+        ]
+      },
+      {
+        text: 'LLM应用开发',
+        items: [
           { text: 'LangChain', link: '/langchain/' },
-          { text: 'LlamaIndex', link: '/llamaindex/' }
+          { text: 'LlamaIndex', link: '/llamaindex/' },
+          { text: 'LangGraph', link: '/langgraph/' }
+        ]
+      },
+      {
+        text: '向量数据库',
+        items: [
+          { text: 'Chroma', link: '/chroma/' },
+          { text: 'Milvus', link: '/milvus/' },
+          { text: 'Faiss', link: '/faiss/' }
         ]
       },
       {
@@ -72,7 +105,7 @@ export default defineConfig({
           { text: 'MLflow', link: '/mlflow/' },
           { text: 'W&B', link: '/wandb/' },
           { text: 'Airflow', link: '/airflow/' },
-          { text: 'Triton', link: '/triton/' }
+          { text: 'Triton Server', link: '/triton/' }
         ]
       }
     ],

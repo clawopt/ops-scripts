@@ -124,7 +124,7 @@ body {
 }
 
 .VPNavBar {
-  max-width: 1400px !important;
+  max-width: none !important;
 }
 
 /* 标题 */
@@ -554,7 +554,7 @@ body {
   padding: 4px 0 !important;
 }
 
-/* 屏幕变小时左右列表自动排版成一列 */
+/* 屏幕宽度变化时左右列表自动排版成一列 */
 @media (max-width: 1200px) {
   .category-layout {
     grid-template-columns: 1fr !important;
@@ -568,42 +568,5 @@ body {
   
   .category-intro-image {
     height: 100px !important;
-  }
-}
-
-/* 移动端导航栏菜单显示 */
-@media (max-width: 768px) {
-  .VPNavBar .hamburger {
-    display: flex !important;
-  }
-  
-  .VPNavBar .nav-bar-content-right {
-    display: flex !important;
-  }
-  
-  .VPNavScreen {
-    display: block !important;
-  }
-  
-  .VPNavScreen .nav-screen-content {
-    display: block !important;
-  }
-  
-  /* 确保移动端导航菜单可以展开 */
-  .VPNavBar .title + .content {
-    display: none !important;
-  }
-  
-  .VPNavBar.hamburger-open .title + .content {
-    display: flex !important;
-    flex-direction: column !important;
-    position: absolute !important;
-    top: 100% !important;
-    left: 0 !important;
-    right: 0 !important;
-    background: var(--bg-main) !important;
-    border-bottom: 1px solid var(--border) !important;
-    padding: 16px !important;
-    z-index: 99 !important;
   }
 }

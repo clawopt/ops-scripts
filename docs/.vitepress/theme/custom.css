@@ -11,10 +11,77 @@
   text-decoration: none !important;
 }
 
-/* 移除首页h2标题的分割线 */
-.vp-doc h2 {
+/* 移除所有页面h1、h2、h3标题的分割线 */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  border: none !important;
   border-top: none !important;
+  margin-top: 0.8em !important;
+  margin-bottom: 0.4em !important;
   padding-top: 0 !important;
+}
+
+/* 移除左侧侧边栏导航的所有内部分割线 - 极致紧凑布局 */
+.VPSidebar * {
+  border: none !important;
+}
+
+.VPSidebar *::before,
+.VPSidebar *::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* 侧边栏极致紧凑：强制归零 */
+.VPSidebar {
+  border-right: 1px solid var(--vp-c-divider) !important;
+}
+
+/* 移除所有章节(level-0)和分组(group)的垂直间距 */
+.VPSidebar .group,
+.VPSidebar .group + .group,
+.VPSidebarItem.level-0,
+[data-v-b3fd67f8].level-0,
+[data-v-c40bc020].group {
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-top: none !important;
+}
+
+/* 压缩项目内部高度，维持原始左右 padding 保证对齐 */
+.VPSidebarItem .item {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 12px !important; /* 恢复原始左右留白感 */
+  min-height: 24px !important; /* 大幅降低最小高度 */
+}
+
+.VPSidebarItem .text {
+  line-height: 24px !important; /* 匹配最小高度 */
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.VPSidebarItem .caret {
+  margin-left: auto !important;
+}
+
+/* 禁用所有伪元素产生的占位 */
+.VPSidebar *::before,
+.VPSidebar *::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* 清除容器级所有间距 */
+.VPSidebar .nav,
+.VPSidebar .container,
+.VPSidebar .content {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* 浅色模式 */

@@ -13,6 +13,57 @@ export default defineConfig({
     ['script', { src: 'https://cdn.tailwindcss.com' }],
     ['script', { src: 'https://code.iconify.design/3/3.1.1/iconify.min.js' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap' }],
+    ['style', {}, `
+      .vp-doc h1, .vp-doc h2, .vp-doc h3 {
+        border: none !important;
+        border-top: none !important;
+        margin-top: 0.8em !important;
+        margin-bottom: 0.4em !important;
+        padding-top: 0 !important;
+      }
+      .VPSidebar * {
+        border: none !important;
+      }
+      .VPSidebar .group,
+      .VPSidebar .group + .group,
+      .VPSidebarItem.level-0,
+      [data-v-b3fd67f8].level-0,
+      [data-v-c40bc020].group {
+        margin: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        border-top: none !important;
+      }
+      .VPSidebarItem .item {
+        display: flex !important;
+        align-items: center !important;
+        margin: 0 !important;
+        padding: 0 12px !important;
+        min-height: 24px !important;
+      }
+      .VPSidebarItem .text {
+        line-height: 24px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .VPSidebarItem .caret {
+        margin-left: auto !important;
+      }
+      .VPSidebar *::before,
+      .VPSidebar *::after {
+        display: none !important;
+        content: none !important;
+      }
+      .VPSidebar {
+        border-right: 1px solid var(--vp-c-divider) !important;
+      }
+      .VPSidebar .nav,
+      .VPSidebar .container,
+      .VPSidebar .content {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+    `],
   ],
   themeConfig: {
     logo: 'AI',

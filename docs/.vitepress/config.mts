@@ -77,13 +77,28 @@ export default defineConfig({
       .VPSidebarItem.level-0 {
         margin-bottom: 0 !important;
       }
-      .VPSidebar *::before,
-      .VPSidebar *::after {
+      .VPSidebar .group::before,
+      .VPSidebar .group::after {
         display: none !important;
         content: none !important;
       }
       .VPSidebar {
         border-right: 1px solid var(--vp-c-divider) !important;
+      }
+      .VPSidebarItem .caret {
+        cursor: pointer !important;
+      }
+      .VPSidebarItem .item .caret-icon {
+        display: block !important;
+      }
+      .vp-doc .header-anchor {
+        display: inline-block !important;
+        float: none !important;
+        position: static !important;
+        margin: 0 0.25em 0 0 !important;
+        vertical-align: middle !important;
+        text-decoration: none !important;
+        opacity: 0.7;
       }
     `],
   ],
@@ -105,7 +120,7 @@ export default defineConfig({
       {
         text: 'Python',
         items: [
-          { text: 'Python', link: '/python/' },
+          { text: 'Python', link: '/python/00-why-python' },
           { text: 'NumPy', link: '/numpy/' },
           { text: 'Pandas', link: '/pandas/' },
           { text: 'Matplotlib', link: '/matplotlib/' }
@@ -193,42 +208,10 @@ export default defineConfig({
     sidebar: {
       '/python/': [
         {
-          text: 'Python AI 教程',
+          text: 'Python 教程',
+          collapsed: false,
           items: [
-            { text: '首页', link: '/python/' }
-          ]
-        },
-        {
-          text: '第0章：课程介绍',
-          collapsed: true,
-          items: [
-            { text: '为什么选择Python', link: '/python/00-why-python' },
-            { text: '课程特色与学习方法', link: '/python/01-course-features' },
-            { text: '环境准备', link: '/python/02-environment-setup' }
-          ]
-        },
-        {
-          text: '第1章：Python基础语法',
-          collapsed: true,
-          items: [
-            { text: '数字类型', link: '/python/10-number-types' },
-            { text: '字符串', link: '/python/11-string' },
-            { text: '布尔值与None', link: '/python/12-boolean-none' },
-            { text: '运算符', link: '/python/13-operators' }
-          ]
-        },
-        {
-          text: '第2章：控制流与函数',
-          collapsed: true,
-          items: [
-            { text: '敬请期待...', link: '/python/' }
-          ]
-        },
-        {
-          text: '第3章：数据结构',
-          collapsed: true,
-          items: [
-            { text: '敬请期待...', link: '/python/' }
+            { text: '字典与集合', link: '/python/14-set-dict' }
           ]
         }
       ],

@@ -193,7 +193,7 @@ layout: home
         <p class="category-intro-desc">掌握 AI 开发必备的编程语言和核心库</p>
       </div>
       <div class="tutorials-list">
-        <a href="/x-ai-web/python/" class="tutorial-item">
+        <a href="/x-ai-web/python/00-why-python" class="tutorial-item">
           <div class="tutorial-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white;"><span class="iconify" data-icon="logos:python"></span></div>
           <div class="tutorial-content">
             <div class="tutorial-title">Python教程</div>

@@ -12,14 +12,32 @@ export default defineConfig({
     ['style', {}, `
       .VPDoc .aside { display: block !important; }
       .VPDoc .aside { position: sticky; top: calc(var(--vp-nav-height) + 8px); height: calc(100vh - var(--vp-nav-height) - 16px); overflow: auto; }
-      .VPDoc .aside { width: 300px !important; }
-      .VPDoc .container { gap: 16px !important; }
-      .VPDoc .content .content-container { max-width: none !important; width: auto !important; padding-left: 12px !important; padding-right: 12px !important; }
-      .VPSidebar {
-        margin-top: var(--vp-nav-height) !important;
+      
+      /* 统一顶部栏布局，防止搜索框在有侧边栏时右移 */
+      .VPNavBar { padding: 0 24px !important; }
+      .VPNavBar-title { width: auto !important; padding-right: 32px !important; }
+      .VPNavBar-container { max-width: none !important; }
+      
+      /* 侧边栏样式优化 */
+      .VPSidebar { 
+        margin-top: var(--vp-nav-height) !important; 
+        padding-top: 0 !important; /* 彻底移除顶部内边距 */
+        background: var(--vp-c-bg) !important; 
+        border-right: 1px solid var(--vp-c-divider) !important; 
       }
-    `]
-    ,
+      .VPSidebar .curtain { display: none !important; }
+      .VPSidebar-nav { padding-top: 8px !important; } /* 进一步减小侧边栏内容顶部间距 */
+      
+      /* 侧边栏分组标题间距优化 */
+      .VPSidebarItem.level-0 { margin-top: 0 !important; padding-top: 0 !important; }
+      .VPSidebarItem.level-0 .text { padding-top: 8px !important; padding-bottom: 8px !important; }
+      
+      .VPNav, .VPNavBar { border-bottom: none !important; box-shadow: none !important; }
+      .VPLocalNav { display: none !important; }
+      
+      /* 首页和教程页面顶部栏底色统一 */
+      .VPNav { background-color: var(--vp-c-bg) !important; }
+    `],
     ['script', {}, `
       (function () {
         function updateSidebarWidth() {
